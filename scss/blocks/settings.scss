@@ -18,8 +18,19 @@ body {
   background-color: #fff;
   font-family: "Raleway", Arial, sans-serif;
   font-size: 16px;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   &.lock {
     overflow: hidden;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    background-image: url(../img/bg@2x.jpg);
   }
 }
 svg {
@@ -54,21 +65,83 @@ svg {
   color: #6B686B;
   opacity: 1;
 }
-.page {
-  min-height: 100%;
+.wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  background-image: url(../img/bg_up.png), url(../img/bg_center.png), url(../img/bg_bottom.png);
+  background-position: 0 0, 0 50%, 0 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100% auto, 100% auto, 100% auto;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    background-image: url(../img/bg_up@2x.png), url(../img/bg_center@2x.png), url(../img/bg_bottom@2x.png);
+  }
 }
-.content {
+.main {
   flex-grow: 1;
 }
-/* /settings */
-
-.triangle {
-  width: 50px;
-  height: 50px;
-  background: 
-    linear-gradient(to left bottom, #fff 49.5%, transparent 50.5%), 
-    linear-gradient(to left top, #fff 49.5%, transparent 50.5%)
-    red;
+.navpage {
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      a {
+        color: $primary;
+        font-weight: bold;
+      }
+    }
+  }
 }
+.btn-shadow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 32px;
+  background: linear-gradient(322.43deg, #9E00C1 8.7%, #8700A5 92.24%);
+  box-shadow: 0px 8px 24px rgba(137, 1, 168, 0.4), inset 0px 4px 12px rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    display: block;
+    background-color: #d30fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  span {
+    z-index: 3;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+/* /settings */

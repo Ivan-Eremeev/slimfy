@@ -1,0 +1,42 @@
+/* header */
+.header { 
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 48px 0 21px;
+    &--sticker {
+      padding-top: 93px;
+    }
+  }
+  &__logo {
+    max-width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    img {
+      display: block;
+    } 
+  }
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px 16px 24px;
+    background: #FFFFFF;
+    border: 1px solid rgba(148, 0, 181, 0.4);
+    outline: none;
+    border-radius: 16px;
+    color: $primary;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+    img {
+      margin-left: 10px;
+    }
+    &:hover {
+      box-shadow: 0px 8px 24px rgba(137, 1, 168, 0.4), inset 0px 4px 12px rgba(255, 255, 255, 0.25);
+    }
+  }
+}
+/* /header */

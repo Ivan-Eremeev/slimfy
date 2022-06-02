@@ -1,0 +1,48 @@
+/* sticker */
+.sticker { 
+  width: 100%;
+  background-color: $secondary;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+  }
+  &__timer {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    font-family: "Roboto" ,sans-serif;
+  }
+  &__text {
+    font-weight: 500;
+    margin-right: 16px;
+    line-height: 24px;
+  }
+  &__time {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  &__price {
+    padding: 4px 16px;
+    border-radius: 32px;
+    background-color: $primary;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
+  &__price-before {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+/* /sticker */

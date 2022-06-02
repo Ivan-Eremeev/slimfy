@@ -11,11 +11,107 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body> 
-		<div class="page"> 
+		<div class="wrapper"> 
 			<!-- header-->
-			<header class="header" id="header"></header>
+			<header class="header">
+				<div class="container">
+					<div class="header__container header__container--sticker"> <a class="header__logo" href="#"> <img src="img/logo.svg" alt=""></a><a class="header__btn" href="#">Войти<img src="img/account.svg" alt=""></a></div>
+				</div>
+			</header>
 			<!--	/header-->
-			<div class="content"> </div>
+			<main class="main"> 
+				<!-- sticker-->
+				<div class="sticker">
+					<div class="container">
+						<div class="sticker__container"> 
+							<div class="sticker__timer"> 
+								<div class="sticker__text">Специальная цена</div>
+								<div class="sticker__time">00:10:25</div>
+							</div>
+							<div class="sticker__price">345 &#8381;</div>
+							<strike class="sticker__price-before">448 &#8381;</strike>
+						</div>
+					</div>
+				</div>
+				<!--	/sticker-->
+				<!-- welcome-->
+				<div class="welcome">
+					<div class="container"> 
+						<div class="welcome__container"> 
+							<div class="welcome__content"> 
+								<div class="welcome__title">Получите свой индивидуальный план похудения всего за <span>345 руб </span>в неделю</div>
+								<div class="welcome__btn"> 
+									<div class="btn-shadow"><span>Получить план похудения</span></div>
+								</div>
+								<div class="welcome__list"> 
+									<div class="welcome__approval"> 
+										<input id="approval_0" type="checkbox">
+										<label for="approval_0"> 
+											<div class="welcome__approval-checkbox"> </div>
+											<div class="welcome__approval-text">Согласен с условиями <a href="#">публичной оферты</a></div>
+										</label>
+									</div>
+									<div class="welcome__approval"> 
+										<input id="approval_1" type="checkbox">
+										<label for="approval_1"> 
+											<div class="welcome__approval-checkbox"> </div>
+											<div class="welcome__approval-text">Согласен с условиями оферты рекуррентных платежей и подтверждаю согласие на автоматические списания в размере 345 руб. каждую неделю до приостановления действующей подписки в личном кабинете. Подробнее об отмене и возврате средств в оферты рекуррентных платежей</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="welcome__img"> <img src="img/welcome.png" alt="" srcset="welcome@2x.png 2x"></div>
+						</div>
+					</div>
+				</div>
+				<!--	/welcome-->
+				<!-- items-->
+				<div class="items">
+					<div class="container"> 
+						<div class="items__container"> 
+							<div class="row gy-3">
+								<div class="col-lg-4 col-sm-6"> 
+									<div class="items__item"> 
+										<div class="items__img"> <img src="img/items_01.jpg" alt="" srcset="items_01@2x.jpg 2x"></div>
+										<div class="items__title">Ежедневный план питания 2400 ккал</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6"> 
+									<div class="items__item"> 
+										<div class="items__img"> <img src="img/items_02.jpg" alt="" srcset="items_02@2x.jpg 2x"></div>
+										<div class="items__title">Ежедневная жиросжигающая тренировка</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6"> 
+									<div class="items__item"> 
+										<div class="items__img"> <img src="img/items_03.jpg" alt="" srcset="items_03@2x.jpg 2x"></div>
+										<div class="items__title">Дневной минимум воды 2.2 л</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6"> 
+									<div class="items__item"> 
+										<div class="items__img"> <img src="img/items_04.jpg" alt="" srcset="items_04@2x.jpg 2x"></div>
+										<div class="items__title">Прогулка <br>4500 шагов</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6"> 
+									<div class="items__item"> 
+										<div class="items__img"> <img src="img/items_05.jpg" alt="" srcset="items_05@2x.jpg 2x"></div>
+										<div class="items__title">Образовательные материалы и советы</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6"> 
+									<div class="items__item"> 
+										<div class="items__img"> <img src="img/items_06.jpg" alt="" srcset="items_06@2x.jpg 2x"></div>
+										<div class="items__title">Многое другое! трекер веса + трекер калорий </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--	/items-->
+			</main>
 			<!-- footer-->
 			<footer class="footer"></footer>
 			<!--	/footer-->
