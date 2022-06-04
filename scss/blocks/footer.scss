@@ -1,0 +1,126 @@
+/* footer */
+.footer { 
+  &__container {
+    padding: 32px 40px 24px;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #363636;
+    a {
+      margin-left: 12px;
+      border-bottom: 1px solid transparent;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      color: $primary;
+      &:hover {
+        border-color: $primary;
+      }
+    }
+  }
+  &__name {
+    font-size: 13px;
+    line-height: 24px;
+    color: #474447;
+  }
+  &__nav {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    ul {
+      display: flex;
+      margin-left: -32px;
+      li {
+        padding-left: 32px;
+        a {
+          color: #1A181B;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  &__market {
+    display: inline-block;
+    border-radius: 5px;
+    img {
+      display: block;
+    }
+    &:hover {
+      box-shadow: 0px 8px 24px rgba(137, 1, 168, 0.4), inset 0px 4px 12px rgba(255, 255, 255, 0.25);
+    }
+  }
+  &__bottom {
+    margin-bottom: 22px;
+  }
+  &__list {
+    font-size: 13px;
+    line-height: 24px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -8px;
+      margin-left: -20px;
+      li {
+        padding-left: 20px;
+        padding-top: 8px;
+        a {
+          color: #474447;
+          border-bottom: 1px solid #474447;
+          &:hover {
+            color: $primary;
+            border-color: $primary;
+          }
+        }
+      }
+    }
+  }
+  &__ps {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #8F8E8F;
+    text-align: center;
+  }
+  @include media-breakpoint-down(xl) {
+    &__container {
+      padding: 22px 32px 16px;
+    }
+    &__bottom {
+      margin-bottom: 16px;
+    }
+    &__ps {
+      max-width: 690px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__text {
+      width: 100%;
+    }
+    &__name {
+      width: 100%;
+    }
+  }
+}
+/* /footer */

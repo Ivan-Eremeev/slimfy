@@ -16,6 +16,7 @@
   &__timer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-right: 32px;
     font-family: "Roboto" ,sans-serif;
   }
@@ -28,6 +29,11 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
+    white-space: nowrap;
+  }
+  &__pricing {
+    display: flex;
+    align-items: center;
   }
   &__price {
     padding: 4px 16px;
@@ -38,11 +44,33 @@
     font-size: 22px;
     line-height: 30px;
     margin-right: 16px;
+    white-space: nowrap;
   }
   &__price-before {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     line-height: 24px;
+    white-space: nowrap;
+  }
+  @include media-breakpoint-down(xl) {
+    &__container {
+      padding: 4px 0;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__container {
+      align-items: flex-end;
+    }
+    &__text {
+      width: 100%;
+      font-size: 15px;
+    }
+    &__time {
+      font-size: 20px;
+    }
+    &__price {
+      font-size: 20px;
+    }
   }
 }
 /* /sticker */

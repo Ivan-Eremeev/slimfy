@@ -17,8 +17,9 @@ block content
             .sticker__timer 
               .sticker__text Специальная цена
               .sticker__time 00:10:25
-            .sticker__price 345 &#8381;
-            strike.sticker__price-before 448 &#8381;
+            .sticker__pricing 
+              .sticker__price 345 &#8381;
+              strike.sticker__price-before 448 &#8381;
       //	/sticker
 
       // welcome
@@ -29,6 +30,7 @@ block content
               .welcome__title Получите свой индивидуальный план похудения всего за 
                 span 345 руб 
                 | в неделю
+              #welcomeImgTo
               .welcome__btn 
                 .btn-shadow
                   span Получить план похудения
@@ -44,9 +46,10 @@ block content
                   label(for="approval_1") 
                     .welcome__approval-checkbox 
                     .welcome__approval-text Согласен с условиями оферты рекуррентных платежей и подтверждаю согласие на автоматические списания в размере 345 руб. каждую неделю до приостановления действующей подписки в личном кабинете. Подробнее об отмене и возврате средств в оферты рекуррентных платежей
-
-            .welcome__img 
-              img(src="img/welcome.png", alt="" srcset="img/welcome@2x.png 2x")
+            
+            #welcomeImgFrom
+              .welcome__img#welcomeImg
+                img(src="img/welcome.png", alt="" srcset="img/welcome@2x.png 2x")
       //	/welcome
 
       // items
@@ -54,32 +57,32 @@ block content
         .container 
           .items__container 
             .row.gy-3
-              .col-lg-4.col-md-6 
+              .col-xl-4.col-md-6 
                 .items__item 
                   .items__img 
                     img(src="img/items_01.jpg", alt="" srcset="img/items_01@2x.jpg 2x")
                   .items__title Ежедневный план питания 2400 ккал
-              .col-lg-4.col-md-6 
+              .col-xl-4.col-md-6 
                 .items__item 
                   .items__img 
                     img(src="img/items_02.jpg", alt="" srcset="img/items_02@2x.jpg 2x")
                   .items__title Ежедневная жиросжигающая тренировка
-              .col-lg-4.col-md-6 
+              .col-xl-4.col-md-6 
                 .items__item 
                   .items__img 
                     img(src="img/items_03.jpg", alt="" srcset="img/items_03@2x.jpg 2x")
                   .items__title Дневной минимум воды 2.2 л
-              .col-lg-4.col-md-6 
+              .col-xl-4.col-md-6 
                 .items__item 
                   .items__img 
                     img(src="img/items_04.jpg", alt="" srcset="img/items_04@2x.jpg 2x")
                   .items__title Прогулка <br>4500 шагов
-              .col-lg-4.col-md-6 
+              .col-xl-4.col-md-6 
                 .items__item 
                   .items__img 
                     img(src="img/items_05.jpg", alt="" srcset="img/items_05@2x.jpg 2x")
                   .items__title Образовательные материалы и советы
-              .col-lg-4.col-md-6 
+              .col-xl-4.col-md-6 
                 .items__item 
                   .items__img 
                     img(src="img/items_06.jpg", alt="" srcset="img/items_06@2x.jpg 2x")

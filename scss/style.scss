@@ -31,7 +31,7 @@ $grid-breakpoints: ( // Брейкпоинты
 $container-max-widths: ( // Максимальная ширина контейнера
   sm: 540px,
   md: 720px,
-  lg: 960px,
+  lg: 936px,
   xl: 1140px,
   xxl: 1264px
 ) !default;
@@ -289,6 +289,7 @@ $secondary: #FF7900;
 @import 'blocks/welcome';
 @import 'blocks/sticker';
 @import 'blocks/items';
+@import 'blocks/footer';
 // @import 'hamburgers/hamburgers';
 // @import 'blocks/menu';
 // @import 'blocks/accordion';

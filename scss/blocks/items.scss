@@ -1,5 +1,6 @@
 /* items */
 .items { 
+  font-family: "Manrope", sans-serif;
   margin-bottom: 80px;
   &__container {
     
@@ -33,6 +34,9 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
+  }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 64px;
   }
 }
 /* /items */
