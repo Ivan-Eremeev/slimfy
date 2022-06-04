@@ -64,7 +64,6 @@ svg {
   opacity: 1;
 }
 .wrapper {
-  padding-bottom: 40px;
   background-image: url(../img/bg_up.png), url(../img/bg_center.png), url(../img/bg_bottom.png);
   background-position: 0 0, 0 50%, 0 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -77,8 +76,16 @@ svg {
   only screen and (min-resolution: 2dppx) {
     background-image: url(../img/bg_up@2x.png), url(../img/bg_center@2x.png), url(../img/bg_bottom@2x.png);
   }
+  padding-bottom: 40px;
+  @include media-breakpoint-down(md) {
+    background-image: url(../img/bg_up.png), url(../img/bg_bottom.png);
+    background-position: 0 0, 0 100%;
+    background-size: 100% auto, 100% auto;
+    padding-bottom: 24px;
+  }
 }
 .navpage {
+  padding: 100px 0 400px;
   h1 {
     font-size: 24px;
     margin-bottom: 20px;

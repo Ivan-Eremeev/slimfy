@@ -7094,18 +7094,29 @@ svg {
 }
 
 .wrapper {
-  padding-bottom: 40px;
   background-image: url(../img/bg_up.png), url(../img/bg_center.png), url(../img/bg_bottom.png);
   background-position: 0 0, 0 50%, 0 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 100% auto, 100% auto, 100% auto;
+  padding-bottom: 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .wrapper {
     background-image: url(../img/bg_up@2x.png), url(../img/bg_center@2x.png), url(../img/bg_bottom@2x.png);
   }
 }
+@media (max-width: 767.98px) {
+  .wrapper {
+    background-image: url(../img/bg_up.png), url(../img/bg_bottom.png);
+    background-position: 0 0, 0 100%;
+    background-size: 100% auto, 100% auto;
+    padding-bottom: 24px;
+  }
+}
 
+.navpage {
+  padding: 100px 0 400px;
+}
 .navpage h1 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -7376,6 +7387,7 @@ svg {
   .welcome {
     padding-top: 12px;
     overflow: hidden;
+    margin-bottom: 35px;
   }
   .welcome__content {
     max-width: none;
@@ -7521,6 +7533,12 @@ svg {
   font-family: "Manrope", sans-serif;
   margin-bottom: 80px;
 }
+.items .row {
+  margin-top: -24px;
+}
+.items .row > * {
+  padding-top: 24px;
+}
 .items__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7564,6 +7582,25 @@ svg {
 @media (max-width: 1269.98px) {
   .items {
     margin-bottom: 64px;
+  }
+}
+@media (max-width: 767.98px) {
+  .items {
+    margin-bottom: 48px;
+  }
+  .items .row {
+    margin-top: -16px;
+  }
+  .items .row > * {
+    padding-top: 16px;
+  }
+  .items__img {
+    width: 95px;
+    height: 77px;
+  }
+  .items__title {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -7704,11 +7741,36 @@ svg {
   }
 }
 @media (max-width: 767.98px) {
+  .footer__container {
+    padding: 24px 16px 16px;
+  }
   .footer__text {
     width: 100%;
+    margin-bottom: 13px;
+  }
+  .footer__text span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer__text a {
+    margin-left: 0;
   }
   .footer__name {
     width: 100%;
+    margin-bottom: 12px;
+  }
+  .footer__center {
+    margin-bottom: 12px;
+  }
+  .footer__list ul {
+    margin-top: -4px;
+  }
+  .footer__list ul li {
+    padding-top: 4px;
+  }
+  .footer__ps {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 

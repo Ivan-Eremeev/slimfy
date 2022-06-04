@@ -115,11 +115,38 @@
     }
   }
   @include media-breakpoint-down(md) {
+    &__container {
+      padding: 24px 16px 16px;
+    }
     &__text {
       width: 100%;
+      margin-bottom: 13px;
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+      a {
+        margin-left: 0;
+      }
     }
     &__name {
       width: 100%;
+      margin-bottom: 12px;
+    }
+    &__center {
+      margin-bottom: 12px;
+    }
+    &__list {
+      ul {
+        margin-top: -4px;
+        li {
+          padding-top: 4px;
+        }
+      }
+    }
+    &__ps {
+      font-size: 10px;
+      line-height: 16px;
     }
   }
 }
