@@ -1,0 +1,36 @@
+extends core/base.pug
+
+block title 
+  title Форма
+block content
+
+  .wrapper 
+
+    include core/header.pug
+    +header
+
+    main.main 
+
+      // form
+      .form
+        .container 
+          .form__container 
+            h1.form__title Введите ваш form, чтобы получить план питания и программу тренировок для снижения веса
+            .form__text Мы уважаем вашу конфиденциальность и очень серьезно относимся к ее защите — никакого спама
+            form(action="#").form__form 
+              .form__input 
+                .input 
+                  input(type="text" name="form" required)
+                  .input__label Почта
+              .form__btn 
+                button(type="submit").btn-shadow
+                  span Получить план похудения
+              .form__approval 
+                .welcome__approval 
+                  input#approval_1(type="checkbox")
+                  label(for="approval_1") 
+                    .welcome__approval-checkbox 
+                    .welcome__approval-text Я хочу получать новости о продуктах, услугах и специальных предложениях от Slimfy по электронной почте.
+      //	/form
+
+    include core/footer.pug

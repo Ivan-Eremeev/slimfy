@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
-		<title>Навигация по страницам</title>
+		<title>Форма</title>
 		<meta name="robots" content="noindex, nofollow">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -20,15 +20,36 @@
 						</header>
 						<!--	/header-->
 			<main class="main"> 
-				<div class="container"> 
-					<div class="navpage"> 
-						<h1>Навигация по страницам</h1>
-						<ul> 
-							<li> <a href="home.html">Главная</a></li>
-							<li> <a href="form.html">Форма </a></li>
-						</ul>
+				<!-- form-->
+				<div class="form">
+					<div class="container"> 
+						<div class="form__container"> 
+							<h1 class="form__title">Введите ваш form, чтобы получить план питания и программу тренировок для снижения веса</h1>
+							<div class="form__text">Мы уважаем вашу конфиденциальность и очень серьезно относимся к ее защите — никакого спама</div>
+							<form class="form__form" action="#"> 
+								<div class="form__input"> 
+									<div class="input"> 
+										<input type="text" name="form" required>
+										<div class="input__label">Почта</div>
+									</div>
+								</div>
+								<div class="form__btn"> 
+									<button class="btn-shadow" type="submit"><span>Получить план похудения</span></button>
+								</div>
+								<div class="form__approval"> 
+									<div class="welcome__approval"> 
+										<input id="approval_1" type="checkbox">
+										<label for="approval_1"> 
+											<div class="welcome__approval-checkbox"> </div>
+											<div class="welcome__approval-text">Я хочу получать новости о продуктах, услугах и специальных предложениях от Slimfy по электронной почте.</div>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
+				<!--	/form-->
 			</main>
 			<!-- footer-->
 			<footer class="footer">

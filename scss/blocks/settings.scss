@@ -64,6 +64,9 @@ svg {
   opacity: 1;
 }
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-image: url(../img/bg_up.png), url(../img/bg_center.png), url(../img/bg_bottom.png);
   background-position: 0 0, 0 50%, 0 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -84,17 +87,25 @@ svg {
     padding-bottom: 24px;
   }
 }
+.main {
+  flex-grow: 1;
+}
 .navpage {
-  padding: 100px 0 400px;
+  padding: 100px 0;
   h1 {
     font-size: 24px;
     margin-bottom: 20px;
   }
   ul {
     li {
+      margin: 10px 0;
       a {
         color: $primary;
         font-weight: bold;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-color: $primary;
+        }
       }
     }
   }

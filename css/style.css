@@ -7094,6 +7094,14 @@ svg {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
   background-image: url(../img/bg_up.png), url(../img/bg_center.png), url(../img/bg_bottom.png);
   background-position: 0 0, 0 50%, 0 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -7114,16 +7122,29 @@ svg {
   }
 }
 
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .navpage {
-  padding: 100px 0 400px;
+  padding: 100px 0;
 }
 .navpage h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
+.navpage ul li {
+  margin: 10px 0;
+}
 .navpage ul li a {
   color: #9400B5;
   font-weight: bold;
+  border-bottom: 1px solid transparent;
+}
+.navpage ul li a:hover {
+  border-color: #9400B5;
 }
 
 .btn-shadow {
@@ -7188,6 +7209,66 @@ svg {
 }
 
 /* /settings */
+/* input */
+.input {
+  position: relative;
+}
+.input input {
+  width: 100%;
+  padding: 22px 16px 8px 16px;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #363336;
+}
+.input input:focus {
+  border-color: #9400B5;
+}
+.input input:focus ~ .input__label {
+  font-size: 12px;
+  line-height: 16px;
+  top: 8px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.input input:valid ~ .input__label {
+  font-size: 12px;
+  line-height: 16px;
+  top: 8px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.input input .invalid {
+  background-color: red;
+}
+.input input .valid {
+  background-color: green;
+}
+.input__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B686B;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* /input */
 /* header */
 .header__container {
   display: -webkit-box;
@@ -7242,11 +7323,15 @@ svg {
   -webkit-box-shadow: 0px 8px 24px rgba(137, 1, 168, 0.4), inset 0px 4px 12px rgba(255, 255, 255, 0.25);
   box-shadow: 0px 8px 24px rgba(137, 1, 168, 0.4), inset 0px 4px 12px rgba(255, 255, 255, 0.25);
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .header__container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-top: 67px;
+  }
+  .header__container--sticker {
+    padding-top: 93px;
   }
   .header__logo {
     width: 110px;
@@ -7775,3 +7860,78 @@ svg {
 }
 
 /* /footer */
+/* form */
+.form {
+  padding-top: 70px;
+  padding-bottom: 64px;
+}
+.form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.form__title {
+  max-width: 780px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1A181B;
+  margin-bottom: 24px;
+}
+.form__text {
+  max-width: 540px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #454445;
+  margin-bottom: 32px;
+}
+.form__form {
+  width: 100%;
+  max-width: 320px;
+}
+.form__input {
+  margin-bottom: 24px;
+}
+.form__input .input {
+  width: 100%;
+}
+.form__btn {
+  margin-bottom: 24px;
+}
+.form__btn .btn-shadow {
+  width: 100%;
+  padding: 18px 20px;
+}
+.form__approval {
+  text-align: left;
+}
+@media (max-width: 1269.98px) {
+  .form {
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 767.98px) {
+  .form {
+    padding-top: 11px;
+    padding-bottom: 42px;
+  }
+  .form__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 13px;
+  }
+  .form__text {
+    font-size: 16px;
+  }
+}
+
+/* /form */
