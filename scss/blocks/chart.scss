@@ -1,0 +1,164 @@
+/* chart */
+.chart { 
+  padding: 87px 60px 109px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  &__container {
+    display: inline-block;
+    position: relative;
+  }
+  &__bg {
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      animation: 3s chart-bg 1s ease-in-out forwards ;
+    }
+  }
+  &__kg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #E4C980;
+    box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.16);
+    border-radius: 100%;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1;
+    color: #FF7900;
+    position: absolute;
+    left: -52px;
+    top: -31px;
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  &__target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(322.43deg, #FB9538 8.7%, #FF7900 92.24%);
+    box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.16);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    position: absolute;
+    bottom: 21px;
+    right: -42px;
+    opacity: 0;
+    animation: 1s chart-target 4.5s forwards;
+  }
+  &__start-date {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #FF7900;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF7900;
+    position: absolute;
+    left: -42px;
+    bottom: -50px;
+  
+  }
+  &__finish-date {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: linear-gradient(322.43deg, #FB9538 8.7%, #FF7900 92.24%);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    position: absolute;
+    right: -49px;
+    bottom: -49px;
+    opacity: 0;
+    animation: 1s chart-target 4s forwards;
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 70px 60px 90px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 39px 45px 48px;
+    &__kg {
+      width: 56px;
+      height: 56px;
+      font-size: 16px;
+      left: -25px;
+      top: -15px;
+      span {
+        font-size: 13px;
+      }
+    }
+    &__target {
+      width: 56px;
+      height: 56px;
+      font-size: 13px;
+      line-height: 14px;
+      font-weight: 500;
+      bottom: 35px;
+      right: -20px;
+    }
+    &__start-date {
+      padding: 4px 8px;
+      font-size: 12px;
+      line-height: 16px;
+      border-radius: 4px;
+      left: -25px;
+      bottom: -25px;
+    }
+    &__finish-date {
+      padding: 4px 8px;
+      font-size: 12px;
+      line-height: 16px;
+      border-radius: 4px;
+      right: -24px;
+      bottom: -24px;
+    }
+  }
+  @media (max-width: 450px) {
+    &__target {
+      bottom: 19px;
+      right: -20px;
+    }
+  }
+}
+
+@keyframes chart-bg {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes chart-target {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* /chart */

@@ -23,6 +23,7 @@ $(document).ready(function () {
 		})
 
 	}
-  replace($('#welcomeImg'), $('#welcomeImgTo'), $('#welcomeImgFrom'), breakSm);
+	replace($('#welcomeImg'), $('#welcomeImgTo'), $('#welcomeImgFrom'), breakSm);
+	replace($('#welcomeChart'), $('#welcomeChartTo'), $('#welcomeChartFrom'), breakLg);
 
 });

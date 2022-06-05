@@ -1,0 +1,103 @@
+extends core/base.pug
+
+block title 
+  title Предложения
+block content
+
+  .wrapper 
+
+    include core/header.pug
+    +header(true)
+
+    main.main 
+
+      // sticker
+      .sticker
+        .container
+          .sticker__container 
+            .sticker__timer 
+              .sticker__text Специальная цена
+              .sticker__time 00:10:25
+            .sticker__pricing 
+              .sticker__price 345 &#8381;
+              strike.sticker__price-before 448 &#8381;
+      //	/sticker
+
+      // welcome
+      .welcome.welcome--chart
+        .container 
+          .welcome__container 
+            .welcome__content 
+              h1.welcome__title Получите свой индивидуальный план похудения всего за 
+                span 345 руб 
+                | в неделю
+              #welcomeChartTo
+              .welcome__btn 
+                .btn-shadow
+                  span Получить план похудения
+              .welcome__list 
+                .welcome__approval 
+                  input#approval_0(type="checkbox")
+                  label(for="approval_0") 
+                    .welcome__approval-checkbox 
+                    .welcome__approval-text Согласен с условиями 
+                      a(href="#") публичной оферты
+                .welcome__approval 
+                  input#approval_1(type="checkbox")
+                  label(for="approval_1") 
+                    .welcome__approval-checkbox 
+                    .welcome__approval-text Согласен с условиями оферты рекуррентных платежей и подтверждаю согласие на автоматические списания в размере 345 руб. каждую неделю до приостановления действующей подписки в личном кабинете. Подробнее об отмене и возврате средств в оферты рекуррентных платежей
+            
+            #welcomeChartFrom
+              .welcome__chart#welcomeChart
+                // chart
+                .chart
+                  .chart__container
+                    .chart__bg
+                      img(src="img/chart_bg.svg", alt="")
+                    .chart__kg 80
+                      span кг
+                    .chart__target Ваша цель
+                    .chart__start-date 1 июня
+                    .chart__finish-date 29 июня
+                //	/chart
+      //	/welcome
+
+      // items
+      .items
+        .container 
+          .items__container 
+            .row
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_01.jpg", alt="" srcset="img/items_01@2x.jpg 2x")
+                  .items__title Ежедневный план питания 2400 ккал
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_02.jpg", alt="" srcset="img/items_02@2x.jpg 2x")
+                  .items__title Ежедневная жиросжигающая тренировка
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_03.jpg", alt="" srcset="img/items_03@2x.jpg 2x")
+                  .items__title Дневной минимум воды 2.2 л
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_04.jpg", alt="" srcset="img/items_04@2x.jpg 2x")
+                  .items__title Прогулка <br>4500 шагов
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_05.jpg", alt="" srcset="img/items_05@2x.jpg 2x")
+                  .items__title Образовательные материалы и советы
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_06.jpg", alt="" srcset="img/items_06@2x.jpg 2x")
+                  .items__title Многое другое! трекер веса + трекер калорий 
+      //	/items
+
+    include core/footer.pug
