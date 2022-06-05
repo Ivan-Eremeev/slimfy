@@ -1,0 +1,76 @@
+extends core/base.pug
+
+block title 
+  title Возраст
+block content
+
+  .wrapper 
+
+    include core/header.pug
+    +header
+
+    main.main 
+
+      // age
+      .age
+        .container 
+          .age__title Сбалансированное питание и тренировки
+          .age__text в соответствии с вашим возрастом и образом жизни
+          .age__items 
+            .row 
+              .col-lg-3.col-6 
+                a(href="#").age__item 
+                  .age__img 
+                    img(src="img/wooman_01.png", alt="" srcset="img/wooman_01@2x.png 2x")
+                  .age__btn Возраст 
+                    span 18-24
+                    svg(width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(d="M1.08331 1.16659L6.91665 6.99992L1.08331 12.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+              .col-lg-3.col-6 
+                a(href="#").age__item 
+                  .age__img 
+                    img(src="img/wooman_02.png", alt="" srcset="img/wooman_02@2x.png 2x")
+                  .age__btn Возраст 
+                    span 25-34
+                    svg(width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(d="M1.08331 1.16659L6.91665 6.99992L1.08331 12.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+              .col-lg-3.col-6 
+                a(href="#").age__item 
+                  .age__img 
+                    img(src="img/wooman_03.png", alt="" srcset="img/wooman_03@2x.png 2x")
+                  .age__btn Возраст 
+                    span 35-44
+                    svg(width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(d="M1.08331 1.16659L6.91665 6.99992L1.08331 12.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+              .col-lg-3.col-6 
+                a(href="#").age__item 
+                  .age__img 
+                    img(src="img/wooman_04.png", alt="" srcset="img/wooman_04@2x.png 2x")
+                  .age__btn Возраст 
+                    span 45+
+                    svg(width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(d="M1.08331 1.16659L6.91665 6.99992L1.08331 12.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+          .age__approvals 
+            .welcome__approval 
+              input#approval_0(type="checkbox")
+              label(for="approval_0") 
+                .welcome__approval-checkbox 
+                .welcome__approval-text Продолжая, я соглашаюсь c 
+                  a(href="#") Условия использования
+                  | , 
+                  a(href="#") Политика конфиденциальности
+                  | , 
+                  a(href="#") Политика возврата
+                  | , 
+                  a(href="#") Условия подписки
+                  | , 
+                  a(href="#") Политика cookies
+            .welcome__approval 
+              input#approval_1(type="checkbox")
+              label(for="approval_1") 
+                .welcome__approval-checkbox 
+                .welcome__approval-text Я хочу получать новости о продуктах, услугах и специальных предложениях от Slimfy по электронной почте.
+      //	/age
+
+    include core/footer.pug

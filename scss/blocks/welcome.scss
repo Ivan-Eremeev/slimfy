@@ -57,9 +57,11 @@
     &:after {
       content: '';
       display: block;
-      width: 20px;
-      height: 20px;
+      width: 100%;
+      height: 100%;
       background-image: url(../img/check.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
       position: absolute;
       top: 0;
       left: 0;
@@ -72,7 +74,9 @@
     line-height: 16px;
     color: #585558;
     a {
+      display: inline-block;
       color: $primary;
+      position: relative;
       border-bottom: 1px solid $primary;
       &:hover {
         border-color: transparent;

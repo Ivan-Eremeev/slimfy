@@ -102,9 +102,22 @@ svg {
       a {
         color: $primary;
         font-weight: bold;
-        border-bottom: 1px solid transparent;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 1px;
+          background-color: $primary;
+          position: absolute;
+          right: 0;
+          transition: 0.3s;
+        }
         &:hover {
-          border-color: $primary;
+          &:after {
+            width: 100%;
+            left: 0;
+          }
         }
       }
     }
@@ -130,7 +143,6 @@ svg {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-
   &:after {
     content: '';
     display: block;
@@ -144,11 +156,9 @@ svg {
     opacity: 0;
     transition: 0.3s;
   }
-
   span {
     z-index: 3;
   }
-
   &:hover {
     &:after {
       opacity: 1;

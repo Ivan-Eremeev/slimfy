@@ -25,13 +25,26 @@
     color: #363636;
     a {
       margin-left: 12px;
-      border-bottom: 1px solid transparent;
       font-size: 20px;
       line-height: 26px;
       font-weight: 600;
       color: $primary;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $primary;
+        transition: 0.3s;
+        position: absolute;
+        right: 0;
+      }
       &:hover {
-        border-color: $primary;
+        &:after {
+          width: 100%;
+          left: 0;
+        }
       }
     }
   }
@@ -51,8 +64,28 @@
         padding-left: 32px;
         a {
           color: #1A181B;
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: $primary;
+            transition: 0.3s;
+            position: absolute;
+            right: 0;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+              left: 0;
+            }
+          }
           &:hover {
             color: $primary;
+            &:after {
+              width: 100%;
+            }
           }
         }
       }
