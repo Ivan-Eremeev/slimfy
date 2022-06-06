@@ -9,6 +9,17 @@
   &__photos {
     display: flex;
     margin-bottom: 34px;
+    &:hover {
+      .case__photo {
+        &--before {
+          transform: rotate(-12deg) translate(10px, 0);
+          transform-origin: bottom right;
+        }
+        &--after {
+          transform: rotate(3deg) translate(-10px, 0);
+        }
+      }
+    }
   }
   &__photo {
     width: 292px;

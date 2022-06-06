@@ -8987,6 +8987,19 @@ svg {
   display: flex;
   margin-bottom: 34px;
 }
+.case__photos:hover .case__photo--before {
+  -webkit-transform: rotate(-12deg) translate(10px, 0);
+  -ms-transform: rotate(-12deg) translate(10px, 0);
+  transform: rotate(-12deg) translate(10px, 0);
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+.case__photos:hover .case__photo--after {
+  -webkit-transform: rotate(3deg) translate(-10px, 0);
+  -ms-transform: rotate(3deg) translate(-10px, 0);
+  transform: rotate(3deg) translate(-10px, 0);
+}
 .case__photo {
   width: 292px;
   height: 384px;
