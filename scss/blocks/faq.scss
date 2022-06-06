@@ -1,0 +1,67 @@
+/* faq */
+.faq { 
+  margin-bottom: 64px;
+  &__title {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A181B;
+  }
+  &__accordion {
+    
+  }
+  &__item {
+    margin-bottom: 16px;
+    border-radius: 16px !important;
+    overflow: hidden;
+    border: none;
+  }
+  &__button {
+    padding: 24px 37px 16px 32px;
+    background-color: #fff !important;
+    box-shadow: none !important;
+    border: none !important;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1A181B !important;
+    &:after {
+      width: 16px;
+      height: 10px;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8.5L8 1.5L15 8.5' stroke='%236B686B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
+      background-size: contain;
+      transform: rotate(180deg);
+    }
+    &:not(.collapsed) {
+      &:after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  &__collapse {
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #1A181B;
+      opacity: 0.12;
+      position: absolute;
+      top: 0;
+      left: 32px;
+      right: 32px;
+    }
+  }
+  &__text {
+    padding: 16px 32px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #363336;
+    opacity: 0.9;
+  }
+}
+/* /faq */
