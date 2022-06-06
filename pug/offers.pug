@@ -4,7 +4,7 @@ block title
   title Предложения
 block content
 
-  .wrapper 
+  .wrapper.wrapper--offset-bg 
 
     include core/header.pug
     +header(true)
@@ -99,5 +99,75 @@ block content
                     img(src="img/items_06.jpg", alt="" srcset="img/items_06@2x.jpg 2x")
                   .items__title Многое другое! трекер веса + трекер калорий 
       //	/items
+
+      // tariffs
+      .tariffs
+        .container 
+        
+          .tariffs__title Выберите свой план
+
+          .tariffs__items 
+            .row 
+              .col-md-4 
+                a(href="#").tariffs__item.tariffs__item--month 
+                  .tariffs__head 
+                    .tariffs__name Месяц 
+                    .tariffs__rate -60%
+                      span 25 &#8381;/день
+                  .tariffs__card 
+                    .tariffs__price 768 &#8381;
+                      strike 1920 &#8381;
+                    .tariffs__text Ежемесячная оплата
+              .col-md-4 
+                a(href="#").tariffs__item.tariffs__item--week 
+                  .tariffs__head 
+                    .tariffs__name Неделя
+                    .tariffs__rate -25%
+                      span 46 &#8381;/день
+                  .tariffs__card 
+                    .tariffs__price 345 &#8381;
+                      strike 448 &#8381; 
+                    .tariffs__text Еженедельная оплата
+              .col-md-4 
+                a(href="#").tariffs__item.tariffs__item--day 
+                  .tariffs__head 
+                    .tariffs__name День
+                    .tariffs__rate 
+                      span Попробуйте!
+                  .tariffs__card 
+                    .tariffs__price 64 &#8381;
+                    .tariffs__text Ежедневная оплата
+
+          .tariffs__approvals 
+            .welcome__approval 
+              input#approval_2(type="checkbox")
+              label(for="approval_2") 
+                .welcome__approval-checkbox 
+                .welcome__approval-text Согласен с условиями 
+                  a(href="#") публичной оферты
+            .welcome__approval 
+              input#approval_3(type="checkbox")
+              label(for="approval_3") 
+                .welcome__approval-checkbox 
+                .welcome__approval-text Согласен с условиями оферты рекуррентных платежей и подтверждаю согласие на автоматические списания в размере 345 руб. каждую неделю до приостановления действующей подписки в личном кабинете. Подробнее об отмене и возврате средств в оферты рекуррентных платежей
+
+          .tariffs__pays 
+            .tariffs__pays-items 
+              .tariffs__pays-items-row
+                .tariffs__pays-item 
+                  img(src="img/padlock.svg", alt="")
+                  | Гарантия возврата средств
+                .tariffs__pays-item 
+                  img(src="img/wallet.svg", alt="")
+                  | Без скрытых платежей
+            .tariffs__icons 
+              .tariffs__icons-row 
+                .tariffs__icon 
+                  img(src="img/mastercard.svg", alt="")
+                .tariffs__icon 
+                  img(src="img/visa.svg", alt="")
+                .tariffs__icon 
+                  img(src="img/mir.svg", alt="")
+    //	/tariffs
 
     include core/footer.pug
