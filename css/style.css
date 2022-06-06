@@ -7827,6 +7827,7 @@ svg {
   left: 0;
 }
 .footer__name {
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #474447;
@@ -8702,7 +8703,7 @@ svg {
 /* /warranty */
 /* comments */
 .comments {
-  margin-bottom: 40px;
+  margin-bottom: 65px;
 }
 .comments__title {
   font-weight: 600;
@@ -8720,6 +8721,13 @@ svg {
   padding: 24px 32px;
   background: #FFFFFF;
   border-radius: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.comments__item:hover {
+  -webkit-box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
+  box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
 }
 .comments__head {
   display: -webkit-box;
@@ -8786,3 +8794,79 @@ svg {
 }
 
 /* /comments */
+/* case */
+.case {
+  margin-bottom: 80px;
+}
+.case__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.case__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 34px;
+}
+.case__photo {
+  width: 292px;
+  height: 384px;
+  padding: 16px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 16px rgba(161, 159, 162, 0.16);
+  box-shadow: 0px 6px 16px rgba(161, 159, 162, 0.16);
+  border-radius: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.case__photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+}
+.case__photo--before {
+  -webkit-transform: rotate(-10deg) translate(10px, 0);
+  -ms-transform: rotate(-10deg) translate(10px, 0);
+  transform: rotate(-10deg) translate(10px, 0);
+}
+.case__photo--after {
+  -webkit-transform: rotate(10deg) translate(-10px, 0);
+  -ms-transform: rotate(10deg) translate(-10px, 0);
+  transform: rotate(10deg) translate(-10px, 0);
+}
+.case__photo:hover {
+  -webkit-box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
+  box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
+}
+.case__content {
+  max-width: 320px;
+  text-align: center;
+}
+.case__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A181B;
+  margin-bottom: 8px;
+}
+.case__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #585558;
+}
+
+/* /case */

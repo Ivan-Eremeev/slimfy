@@ -186,7 +186,7 @@ block content
     // comments
     .comments
       .container 
-        .comments__title Мы создали 
+        h2.comments__title Мы создали 
           span 11,6 млн 
           | планов питания
         .comments__items 
@@ -223,5 +223,19 @@ block content
                   p Мне нравится это приложение, оно поддерживает мою мотивацию и помогает все делать правильно, позволяет следить за моим графиком. Упражнения в приложении просто потрясающие
                   p Мне еще очень нравится мой план вкусного питания
     //	/comments
+
+    // case
+    .case
+      .container 
+        .case__container 
+          .case__photos 
+            .case__photo.case__photo--before
+              img(src="img/case_before.jpg", alt="" srcset="img/case_before@2x.jpg 2x")
+            .case__photo.case__photo--after
+              img(src="img/case_after.jpg", alt="" srcset="img/case_after@2x.jpg 2x")
+          .case__content
+            .case__title Марина Д., 38 лет, Курск
+            .case__text Результаты не типичны. Индивидуальные результаты могут отличаться
+    //	/case
 
     include core/footer.pug
