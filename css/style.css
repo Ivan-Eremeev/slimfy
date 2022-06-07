@@ -8873,6 +8873,10 @@ svg {
   border: 1px solid #C2BDC3;
   position: relative;
 }
+.warranty__container:not(:hover) img {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 .warranty__title {
   font-weight: 600;
   font-size: 32px;
@@ -8902,6 +8906,10 @@ svg {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.warranty__icon-star img {
+  -webkit-animation: 8s rotate-star linear infinite;
+  animation: 8s rotate-star linear infinite;
 }
 @media (max-width: 1269.98px) {
   .warranty {
@@ -8958,6 +8966,27 @@ svg {
   }
 }
 
+@-webkit-keyframes rotate-star {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-star {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
 /* /warranty */
 /* comments */
 .comments {
