@@ -7366,6 +7366,7 @@ svg {
   content: "";
   display: block;
   background-color: #d30fff;
+  border-radius: 16px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -8392,17 +8393,13 @@ svg {
 .chart__bg {
   position: relative;
 }
-.chart__bg:after {
-  content: "";
-  display: block;
+.chart__after {
   width: 100%;
   height: 100%;
   background-color: #fff;
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-animation: 3s chart-bg 1s ease-in-out forwards;
-  animation: 3s chart-bg 1s ease-in-out forwards;
 }
 .chart__kg {
   display: -webkit-box;
@@ -8463,8 +8460,6 @@ svg {
   bottom: 21px;
   right: -42px;
   opacity: 0;
-  -webkit-animation: 1s chart-target 4.5s forwards;
-  animation: 1s chart-target 4.5s forwards;
 }
 .chart__start-date {
   padding: 8px 16px;
@@ -8493,8 +8488,6 @@ svg {
   right: -49px;
   bottom: -49px;
   opacity: 0;
-  -webkit-animation: 1s chart-target 4s forwards;
-  animation: 1s chart-target 4s forwards;
 }
 @media (max-width: 1269.98px) {
   .chart {
@@ -8707,6 +8700,7 @@ svg {
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 .tariffs__price span {
   margin-left: 10px;
@@ -8879,10 +8873,6 @@ svg {
   border: 1px solid #C2BDC3;
   position: relative;
 }
-.warranty__container:not(:hover) img {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
 .warranty__title {
   font-weight: 600;
   font-size: 32px;
@@ -8913,10 +8903,6 @@ svg {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.warranty__icon-star img {
-  -webkit-animation: 8s rotate-star linear infinite;
-  animation: 8s rotate-star linear infinite;
-}
 @media (max-width: 1269.98px) {
   .warranty {
     margin-bottom: 64px;
@@ -8937,6 +8923,11 @@ svg {
   }
   .warranty__icon-lock {
     width: 43px;
+  }
+}
+@media (max-width: 991.98px) {
+  .warranty__title {
+    padding-right: 90px;
   }
 }
 @media (max-width: 767.98px) {
@@ -8967,27 +8958,6 @@ svg {
   }
 }
 
-@-webkit-keyframes rotate-star {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-
-@keyframes rotate-star {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
 /* /warranty */
 /* comments */
 .comments {

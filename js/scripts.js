@@ -42,4 +42,29 @@ $(document).ready(function () {
 	};
 	emailAutocomplete($('#email'));
 
+	// Анимация графика
+	function chartAnimate() {
+		const bg = $('.chart__bg');
+		bg.append('<div class="chart__after"</div>');
+		const after = $('.chart__after');
+		const target = $('.chart__target');
+		const finishDate = $('.chart__finish-date');
+		setTimeout(() => {
+			after.animate({
+				width: 0
+			}, 3500);
+			setTimeout(() => {
+				target.animate({
+					opacity: 1
+				}, 300);
+			}, 4500);
+			setTimeout(() => {
+				finishDate.animate({
+					opacity: 1
+				}, 300);
+			}, 4000);
+		}, 1000);
+	}
+	chartAnimate();
+
 });
