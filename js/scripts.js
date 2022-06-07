@@ -28,15 +28,17 @@ $(document).ready(function () {
 
 	// Mailtip Автоподстановка почты
 	function emailAutocomplete(input) {
-		const domains = input.data('domains').split(', ');
-		input.mailtip({
-			mails: domains, // email autocomple list
-			onselected: $.noop, // callback on selected
-			width: 'auto',
-			offsetTop: 4,
-			offsetleft: 0,
-			zindex: 2
-		})
+		if (input.length) {
+			const domains = input.data('domains').split(', ');
+			input.mailtip({
+				mails: domains, // email autocomple list
+				onselected: $.noop, // callback on selected
+				width: 'auto',
+				offsetTop: 4,
+				offsetleft: 0,
+				zindex: 2
+			})
+		}
 	};
 	emailAutocomplete($('#email'));
 
