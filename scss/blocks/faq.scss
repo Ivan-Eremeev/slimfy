@@ -16,11 +16,15 @@
     border-radius: 16px !important;
     overflow: hidden;
     border: none;
+    .accordion-header {
+      border-radius: 16px;
+    }
   }
   &__button {
     display: flex;
     justify-content: space-between;
     padding: 24px 37px 16px 32px;
+    border-radius: 16px;
     background-color: #fff !important;
     box-shadow: none !important;
     border: none !important;
@@ -46,6 +50,7 @@
   }
   &__collapse {
     position: relative;
+    border-radius: 0 0 16px 16px;
     &:after {
       content: '';
       display: block;
@@ -60,6 +65,7 @@
   }
   &__text {
     padding: 16px 32px 24px;
+    border-radius: 0 0 16px 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;

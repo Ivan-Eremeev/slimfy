@@ -9225,6 +9225,9 @@ svg {
   overflow: hidden;
   border: none;
 }
+.faq__item .accordion-header {
+  border-radius: 16px;
+}
 .faq__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9233,6 +9236,7 @@ svg {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 24px 37px 16px 32px;
+  border-radius: 16px;
   background-color: #fff !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -9264,6 +9268,7 @@ svg {
 }
 .faq__collapse {
   position: relative;
+  border-radius: 0 0 16px 16px;
 }
 .faq__collapse:after {
   content: "";
@@ -9278,6 +9283,7 @@ svg {
 }
 .faq__text {
   padding: 16px 32px 24px;
+  border-radius: 0 0 16px 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
