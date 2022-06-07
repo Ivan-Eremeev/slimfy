@@ -7826,6 +7826,7 @@ svg {
   font-size: 20px;
   line-height: 24px;
   white-space: nowrap;
+  text-decoration: line-through;
 }
 @media (max-width: 1269.98px) {
   .sticker__container {
