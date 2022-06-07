@@ -8,6 +8,11 @@
     border-radius: 16px;
     border: 1px solid #C2BDC3;
     position: relative;
+    &:not(:hover) {
+      img {
+        animation-play-state: paused;
+      }
+    }
   }
   &__title {
     font-weight: 600;

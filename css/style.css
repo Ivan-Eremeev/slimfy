@@ -8809,6 +8809,10 @@ svg {
   border: 1px solid #C2BDC3;
   position: relative;
 }
+.warranty__container:not(:hover) img {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 .warranty__title {
   font-weight: 600;
   font-size: 32px;
