@@ -9265,7 +9265,7 @@ svg {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 24px 37px 16px 32px;
-  border-radius: 16px;
+  border-radius: 16px !important;
   background-color: #fff !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
