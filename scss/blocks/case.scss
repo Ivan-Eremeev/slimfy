@@ -64,5 +64,23 @@
     line-height: 20px;
     color: #585558;
   }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 48px;
+    &__photos {
+      margin-bottom: 24px;
+    }
+    &__photo {
+      width: 248px;
+      height: 326px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 34px;
+    &__photo {
+      width: 156px;
+      height: 205px;
+      padding: 8px;
+    }
+  }
 }
 /* /case */

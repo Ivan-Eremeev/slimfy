@@ -18,6 +18,8 @@
     border: none;
   }
   &__button {
+    display: flex;
+    justify-content: space-between;
     padding: 24px 37px 16px 32px;
     background-color: #fff !important;
     box-shadow: none !important;
@@ -31,6 +33,7 @@
     &:after {
       width: 16px;
       height: 10px;
+      margin-left: 20px;
       background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8.5L8 1.5L15 8.5' stroke='%236B686B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
       background-size: contain;
       transform: rotate(180deg);
@@ -62,6 +65,26 @@
     line-height: 24px;
     color: #363336;
     opacity: 0.9;
+  }
+  @include media-breakpoint-down(xl) {
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 48px;
+    &__title {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 32px;
+    }
+    &__button {
+      padding: 16px 30px 10px 24px;
+      font-size: 16px;
+    }
+    &__text {
+      padding: 12px 24px 16px;
+    }
   }
 }
 /* /faq */

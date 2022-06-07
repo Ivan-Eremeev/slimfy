@@ -48,6 +48,51 @@
       animation: 8s rotate-star linear infinite;
     }
   }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 64px;
+    &__container {
+      padding: 24px 56px 24px 40px;
+    }
+    &__title {
+      margin-bottom: 12px;
+    }
+    &__icon {
+      top: 3px;
+      right: 19px;
+    }
+    &__icon-star {
+      width: 132px;
+      height: 132px;
+    }
+    &__icon-lock {
+      width: 43px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 47px;
+    &__container {
+      padding: 16px 20px 16px 24px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__icon {
+      top: 5px;
+      right: 29px;
+    }
+    &__icon-lock {
+      width: 36px;
+    }
+    &__icon-star {
+      width: 112px;
+      height: 112px;
+    }
+  }
 }
 
 @keyframes rotate-star {

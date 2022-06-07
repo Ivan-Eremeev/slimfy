@@ -107,8 +107,8 @@ block content
           h2.tariffs__title Выберите свой план
 
           .tariffs__items 
-            .row 
-              .col-md-4 
+            .row.justify-content-center
+              .col-lg-4.col-md-6
                 a(href="#").tariffs__item.tariffs__item--month 
                   .tariffs__head 
                     .tariffs__name Месяц 
@@ -118,7 +118,7 @@ block content
                     .tariffs__price 768 &#8381;
                       strike 1920 &#8381;
                     .tariffs__text Ежемесячная оплата
-              .col-md-4 
+              .col-lg-4.col-md-6
                 a(href="#").tariffs__item.tariffs__item--week 
                   .tariffs__head 
                     .tariffs__name Неделя
@@ -128,7 +128,7 @@ block content
                     .tariffs__price 345 &#8381;
                       strike 448 &#8381; 
                     .tariffs__text Еженедельная оплата
-              .col-md-4 
+              .col-lg-4.col-md-6
                 a(href="#").tariffs__item.tariffs__item--day 
                   .tariffs__head 
                     .tariffs__name День
@@ -177,10 +177,10 @@ block content
           h2.warranty__title Наша гарантия возврата денег
           .warranty__text Мы не сомневаемся, что наша программа будет для вас эффективной, и вы получите видимые результаты через 4 недели! В противном случае мы готовы вернуть Ваши деньги обратно, если вы сможете продемонстрировать, что четко следовали нашему плану. Узнайте больше о действующих ограничениях в нашей политике возврата.
           .warranty__icon 
-            .warraty__icon-lock 
-              img(src="img/lock-2.svg", alt="")
             .warranty__icon-star 
               img(src="img/star.svg", alt="")
+            .warranty__icon-lock 
+              img(src="img/lock-2.svg", alt="")
     //	/warranty
 
     // comments
@@ -190,8 +190,8 @@ block content
           span 11,6 млн 
           | планов питания
         .comments__items 
-          .row 
-            .col-md-4 
+          .row.justify-content-center 
+            .col-lg-4.col-md-6 
               .comments__item 
                 .comments__head 
                   .comments__ava 
@@ -201,7 +201,7 @@ block content
                       img(src="img/star-2.svg", alt="")
                 .comments__body 
                   p Прекрасные блюда, похожие на те, что я обычно покупаю, а по рецептам их легко готовить. Я похудела на 6 кг менее чем за неделю. Признаюсь, сначала я была настроена скептически, но это, безусловно, самая эффективная и недорогая схема питания.
-            .col-md-4 
+            .col-lg-4.col-md-6 
               .comments__item 
                 .comments__head 
                   .comments__ava 
@@ -211,7 +211,7 @@ block content
                       img(src="img/star-2.svg", alt="")
                 .comments__body 
                   p Приложение помогает с ежедневным планированием еды. Оно удобно в использовании и легко читается. Ничего лишнего, все по делу. Упражнения доступные, и сразу чувствуется результат. Мне нравится.
-            .col-md-4 
+            .col-lg-4.col-md-6 
               .comments__item 
                 .comments__head 
                   .comments__ava 
@@ -242,9 +242,9 @@ block content
     .faq
       .container 
         .row 
-          .col-xl-4 
+          .col-xxl-4.col-xl-5
             .faq__title Наши клиенты часто спрашивают
-          .col-xl-7.offset-1
+          .col-xl-7.offset-xxl-1
             .faq__accordion 
               // accordion bootstrap
               .accordionid#accordionFaq

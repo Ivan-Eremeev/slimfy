@@ -79,6 +79,7 @@
     }
   }
   &__card {
+    min-height: 134px;
     padding: 59px 60px 49px 29px;
     margin-top: auto;
     border-radius: 35px;
@@ -183,6 +184,68 @@
           background-image: url(../img/food_03@2x.png);
         }
       }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 50px;
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__head {
+      padding: 20px 24px 12px 24px;
+    }
+    &__name {
+      font-size: 28px;
+    }
+    &__rate {
+      font-size: 30px;
+    }
+    &__card {
+      padding: 24px 115px 24px 24px;
+    }
+    &__price {
+      font-size: 30px;
+      margin-bottom: 0;
+      strike {
+        font-size: 18px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__approvals {
+      margin-bottom: 30px;
+    }
+    &__pays-items {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 23px;
+    &__title {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    &__card {
+      padding-right: 150px;
+    }
+    &__approvals {
+      .welcome__approval-text {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__pays-item {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__icon {
+      width: 56px;
     }
   }
 }

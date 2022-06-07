@@ -8682,6 +8682,7 @@ svg {
   opacity: 0.8;
 }
 .tariffs__card {
+  min-height: 134px;
   padding: 59px 60px 49px 29px;
   margin-top: auto;
   border-radius: 35px;
@@ -8794,6 +8795,70 @@ svg {
     background-image: url(../img/food_03@2x.png);
   }
 }
+@media (max-width: 1269.98px) {
+  .tariffs {
+    margin-bottom: 50px;
+  }
+  .tariffs__title {
+    margin-bottom: 40px;
+  }
+  .tariffs__head {
+    padding: 20px 24px 12px 24px;
+  }
+  .tariffs__name {
+    font-size: 28px;
+  }
+  .tariffs__rate {
+    font-size: 30px;
+  }
+  .tariffs__card {
+    padding: 24px 115px 24px 24px;
+  }
+  .tariffs__price {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .tariffs__price strike {
+    font-size: 18px;
+  }
+  .tariffs__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .tariffs__approvals {
+    margin-bottom: 30px;
+  }
+  .tariffs__pays-items {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .tariffs {
+    margin-bottom: 23px;
+  }
+  .tariffs__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .tariffs__card {
+    padding-right: 150px;
+  }
+  .tariffs__approvals .welcome__approval-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .tariffs__pays-item {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tariffs__icon {
+    width: 56px;
+  }
+}
 
 /* /tariffs */
 /* warranty */
@@ -8846,6 +8911,55 @@ svg {
 .warranty__icon-star img {
   -webkit-animation: 8s rotate-star linear infinite;
   animation: 8s rotate-star linear infinite;
+}
+@media (max-width: 1269.98px) {
+  .warranty {
+    margin-bottom: 64px;
+  }
+  .warranty__container {
+    padding: 24px 56px 24px 40px;
+  }
+  .warranty__title {
+    margin-bottom: 12px;
+  }
+  .warranty__icon {
+    top: 3px;
+    right: 19px;
+  }
+  .warranty__icon-star {
+    width: 132px;
+    height: 132px;
+  }
+  .warranty__icon-lock {
+    width: 43px;
+  }
+}
+@media (max-width: 767.98px) {
+  .warranty {
+    margin-bottom: 47px;
+  }
+  .warranty__container {
+    padding: 16px 20px 16px 24px;
+  }
+  .warranty__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .warranty__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .warranty__icon {
+    top: 5px;
+    right: 29px;
+  }
+  .warranty__icon-lock {
+    width: 36px;
+  }
+  .warranty__icon-star {
+    width: 112px;
+    height: 112px;
+  }
 }
 
 @-webkit-keyframes rotate-star {
@@ -8967,6 +9081,45 @@ svg {
   line-height: 22px;
   color: #363336;
 }
+@media (max-width: 1269.98px) {
+  .comments__item {
+    padding: 24px 20px 24px 24px;
+  }
+  .comments__name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .comments__rating {
+    width: 100%;
+  }
+  .comments__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767.98px) {
+  .comments {
+    margin-bottom: 38px;
+  }
+  .comments__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+  .comments__item {
+    padding: 24px 16px;
+  }
+  .comments__head {
+    margin-bottom: 15px;
+  }
+  .comments__name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .comments__rating {
+    width: auto;
+  }
+}
 
 /* /comments */
 /* case */
@@ -9056,6 +9209,28 @@ svg {
   line-height: 20px;
   color: #585558;
 }
+@media (max-width: 1269.98px) {
+  .case {
+    margin-bottom: 48px;
+  }
+  .case__photos {
+    margin-bottom: 24px;
+  }
+  .case__photo {
+    width: 248px;
+    height: 326px;
+  }
+}
+@media (max-width: 767.98px) {
+  .case {
+    margin-bottom: 34px;
+  }
+  .case__photo {
+    width: 156px;
+    height: 205px;
+    padding: 8px;
+  }
+}
 
 /* /case */
 /* faq */
@@ -9076,6 +9251,12 @@ svg {
   border: none;
 }
 .faq__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 24px 37px 16px 32px;
   background-color: #fff !important;
   -webkit-box-shadow: none !important;
@@ -9094,6 +9275,7 @@ svg {
 .faq__button:after {
   width: 16px;
   height: 10px;
+  margin-left: 20px;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8.5L8 1.5L15 8.5' stroke='%236B686B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
   background-size: contain;
   -webkit-transform: rotate(180deg);
@@ -9126,6 +9308,28 @@ svg {
   line-height: 24px;
   color: #363336;
   opacity: 0.9;
+}
+@media (max-width: 1269.98px) {
+  .faq__title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faq {
+    margin-bottom: 48px;
+  }
+  .faq__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+  .faq__button {
+    padding: 16px 30px 10px 24px;
+    font-size: 16px;
+  }
+  .faq__text {
+    padding: 12px 24px 16px;
+  }
 }
 
 /* /faq */
