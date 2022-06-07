@@ -44,8 +44,6 @@ $(document).ready(function () {
 
 	// Анимация графика
 	function chartAnimate() {
-		const bg = $('.chart__bg');
-		bg.append('<div class="chart__after"</div>');
 		const after = $('.chart__after');
 		const target = $('.chart__target');
 		const finishDate = $('.chart__finish-date');
