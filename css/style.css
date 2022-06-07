@@ -7555,6 +7555,8 @@ svg {
   margin-bottom: 32px;
 }
 .welcome__title span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   color: #9400B5;
   white-space: nowrap;
 }
@@ -8706,11 +8708,13 @@ svg {
   line-height: 47px;
   margin-bottom: 12px;
 }
-.tariffs__price strike {
+.tariffs__price span {
+  margin-left: 10px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   opacity: 0.8;
+  text-decoration: line-through;
 }
 .tariffs__text {
   font-weight: 500;
@@ -8819,7 +8823,7 @@ svg {
     font-size: 30px;
     margin-bottom: 0;
   }
-  .tariffs__price strike {
+  .tariffs__price span {
     font-size: 18px;
   }
   .tariffs__text {
