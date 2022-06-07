@@ -26,4 +26,18 @@ $(document).ready(function () {
 	replace($('#welcomeImg'), $('#welcomeImgTo'), $('#welcomeImgFrom'), breakSm);
 	replace($('#welcomeChart'), $('#welcomeChartTo'), $('#welcomeChartFrom'), breakLg);
 
+	// Mailtip Автоподстановка почты
+	function emailAutocomplete(input) {
+		const domains = input.data('domains').split(', ');
+		input.mailtip({
+			mails: domains, // email autocomple list
+			onselected: $.noop, // callback on selected
+			width: 'auto',
+			offsetTop: 4,
+			offsetleft: 0,
+			zindex: 2
+		})
+	};
+	emailAutocomplete($('#email'));
+
 });

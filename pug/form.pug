@@ -20,7 +20,7 @@ block content
             form(action="#").form__form 
               .form__input 
                 .input 
-                  input(type="text" name="form" required)
+                  input#email.mailtip(type="text" name="form" required data-domains="yandex.ru, gmail.com, mail.ru, msn.com, hotmail.com, outlook.com, yahoo.com")
                   .input__label Почта
               .form__btn 
                 button(type="submit").btn-shadow
