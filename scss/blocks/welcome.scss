@@ -31,7 +31,9 @@
   &__approval {
     margin-bottom: 16px;
     input {
-      display: none;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
       &:checked {
         ~ label {
           .welcome__approval-checkbox {

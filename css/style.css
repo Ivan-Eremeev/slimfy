@@ -7571,7 +7571,9 @@ svg {
   margin-bottom: 16px;
 }
 .welcome__approval input {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
 }
 .welcome__approval input:checked ~ label .welcome__approval-checkbox:after {
   opacity: 1;
