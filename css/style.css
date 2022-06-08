@@ -7409,6 +7409,9 @@ svg {
   line-height: 24px;
   color: #363336;
 }
+.input input:hover {
+  border-color: #9400B5;
+}
 .input input:focus {
   border-color: #9400B5;
 }
@@ -7546,7 +7549,7 @@ svg {
   align-items: flex-end;
 }
 .welcome__content {
-  max-width: 450px;
+  max-width: 480px;
   margin-right: 20px;
 }
 .welcome__title {
@@ -7881,10 +7884,6 @@ svg {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-}
-.items__item:hover {
-  -webkit-box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
-  box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
 }
 .items__img {
   width: 148px;
@@ -8873,10 +8872,6 @@ svg {
   border: 1px solid #C2BDC3;
   position: relative;
 }
-.warranty__container:not(:hover) img {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
 .warranty__title {
   font-weight: 600;
   font-size: 32px;
@@ -8893,23 +8888,10 @@ svg {
   color: #474447;
 }
 .warranty__icon {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-}
-.warranty__icon-star {
   width: 180px;
-  height: 180px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.warranty__icon-star img {
-  -webkit-animation: 8s rotate-star linear infinite;
-  animation: 8s rotate-star linear infinite;
+  top: -42px;
+  right: -34px;
 }
 @media (max-width: 1269.98px) {
   .warranty {
@@ -8922,15 +8904,9 @@ svg {
     margin-bottom: 12px;
   }
   .warranty__icon {
-    top: 3px;
-    right: 19px;
-  }
-  .warranty__icon-star {
     width: 132px;
-    height: 132px;
-  }
-  .warranty__icon-lock {
-    width: 43px;
+    top: -38px;
+    right: -25px;
   }
 }
 @media (max-width: 991.98px) {
@@ -8954,15 +8930,9 @@ svg {
     line-height: 20px;
   }
   .warranty__icon {
-    top: 5px;
-    right: 29px;
-  }
-  .warranty__icon-lock {
-    width: 36px;
-  }
-  .warranty__icon-star {
     width: 112px;
-    height: 112px;
+    top: -29px;
+    right: -9px;
   }
 }
 
@@ -9017,10 +8987,6 @@ svg {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-}
-.comments__item:hover {
-  -webkit-box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
-  box-shadow: 0px 8px 24px rgba(156, 160, 163, 0.5);
 }
 .comments__head {
   display: -webkit-box;
