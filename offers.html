@@ -129,9 +129,10 @@
 				<div class="tariffs">
 					<div class="container"> 
 						<h2 class="tariffs__title">Выберите свой план</h2>
-						<div class="tariffs__items"> 
+						<form class="tariffs__items" action="#"> 
 							<div class="row justify-content-center">
-								<div class="col-lg-4 col-md-6"><a class="tariffs__item tariffs__item--month" href="#"> 
+								<div class="col-lg-4 col-md-6">
+									<button class="tariffs__item tariffs__item--month" type="submit"> 
 										<div class="tariffs__head"> 
 											<div class="tariffs__name">Месяц </div>
 											<div class="tariffs__rate">-60%<span>25 &#8381;/день</span></div>
@@ -139,8 +140,11 @@
 										<div class="tariffs__card"> 
 											<div class="tariffs__price">768 &#8381;<span>1920 &#8381;</span></div>
 											<div class="tariffs__text">Ежемесячная оплата</div>
-										</div></a></div>
-								<div class="col-lg-4 col-md-6"><a class="tariffs__item tariffs__item--week" href="#"> 
+										</div>
+									</button>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<button class="tariffs__item tariffs__item--week" type="submit"> 
 										<div class="tariffs__head"> 
 											<div class="tariffs__name">Неделя</div>
 											<div class="tariffs__rate">-25%<span>46 &#8381;/день</span></div>
@@ -148,8 +152,11 @@
 										<div class="tariffs__card"> 
 											<div class="tariffs__price">345 &#8381;<span>448 &#8381; </span></div>
 											<div class="tariffs__text">Еженедельная оплата</div>
-										</div></a></div>
-								<div class="col-lg-4 col-md-6"><a class="tariffs__item tariffs__item--day" href="#"> 
+										</div>
+									</button>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<button class="tariffs__item tariffs__item--day" type="submit"> 
 										<div class="tariffs__head"> 
 											<div class="tariffs__name">День</div>
 											<div class="tariffs__rate"> <span>Попробуйте!</span></div>
@@ -157,9 +164,11 @@
 										<div class="tariffs__card"> 
 											<div class="tariffs__price">64 &#8381;</div>
 											<div class="tariffs__text">Ежедневная оплата</div>
-										</div></a></div>
+										</div>
+									</button>
+								</div>
 							</div>
-						</div>
+						</form>
 						<div class="tariffs__approvals"> 
 							<div class="welcome__approval"> 
 								<input id="approval_2" type="checkbox">

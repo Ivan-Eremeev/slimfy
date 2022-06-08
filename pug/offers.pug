@@ -107,10 +107,10 @@ block content
         
           h2.tariffs__title Выберите свой план
 
-          .tariffs__items 
+          form(action="#").tariffs__items 
             .row.justify-content-center
               .col-lg-4.col-md-6
-                a(href="#").tariffs__item.tariffs__item--month 
+                button(type="submit").tariffs__item.tariffs__item--month 
                   .tariffs__head 
                     .tariffs__name Месяц 
                     .tariffs__rate -60%
@@ -120,7 +120,7 @@ block content
                       span 1920 &#8381;
                     .tariffs__text Ежемесячная оплата
               .col-lg-4.col-md-6
-                a(href="#").tariffs__item.tariffs__item--week 
+                button(type="submit").tariffs__item.tariffs__item--week 
                   .tariffs__head 
                     .tariffs__name Неделя
                     .tariffs__rate -25%
@@ -130,7 +130,7 @@ block content
                       span 448 &#8381; 
                     .tariffs__text Еженедельная оплата
               .col-lg-4.col-md-6
-                a(href="#").tariffs__item.tariffs__item--day 
+                button(type="submit").tariffs__item.tariffs__item--day 
                   .tariffs__head 
                     .tariffs__name День
                     .tariffs__rate 
