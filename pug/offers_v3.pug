@@ -1,0 +1,284 @@
+extends core/base.pug
+
+block title 
+  title Предложения (версия 3)
+block content
+
+  .wrapper.wrapper--offset-bg 
+
+    include core/header.pug
+    +header(true)
+
+    main.main 
+
+      // sticker
+      .sticker
+        .container
+          .sticker__container 
+            .sticker__timer 
+              .sticker__text Специальная цена
+              .sticker__time 00:10:25
+            .sticker__pricing 
+              .sticker__price 345 &#8381;
+              .sticker__price-before 448 &#8381;
+      //	/sticker
+
+      // welcome
+      .welcome.welcome--chart
+        .container 
+          .welcome__container 
+            .welcome__content 
+              h1.welcome__title Получите свой индивидуальный план похудения всего за 
+                span 345 руб 
+                | в неделю
+              #welcomeChartTo
+              .welcome__btn 
+                .btn-shadow
+                  span Получить план похудения
+              .welcome__list 
+                .welcome__approval 
+                  input#approval_0(type="checkbox")
+                  label(for="approval_0") 
+                    span.welcome__approval-checkbox 
+                    span.welcome__approval-text Согласен с условиями 
+                      a(href="#") публичной оферты
+                .welcome__approval 
+                  input#approval_1(type="checkbox")
+                  label(for="approval_1") 
+                    span.welcome__approval-checkbox 
+                    span.welcome__approval-text Согласен с условиями оферты рекуррентных платежей и подтверждаю согласие на автоматические списания в размере 345 руб. каждую неделю до приостановления действующей подписки в личном кабинете. Подробнее об отмене и возврате средств в оферты рекуррентных платежей
+            
+            #welcomeChartFrom
+              .welcome__chart#welcomeChart
+                // chart
+                .chart
+                  .chart__container
+                    .chart__bg
+                      img(src="img/chart_bg.svg", alt="")
+                      .chart__after
+                    .chart__kg 80
+                      span кг
+                    .chart__target Ваша цель
+                    .chart__start-date 1 июня
+                    .chart__finish-date 29 июня
+                //	/chart
+      //	/welcome
+
+      // items
+      .items
+        .container 
+          .items__container 
+            .row
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_01.jpg", alt="" srcset="img/items_01@2x.jpg 2x")
+                  .items__title Ежедневный план питания 2400 ккал
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_02.jpg", alt="" srcset="img/items_02@2x.jpg 2x")
+                  .items__title Ежедневная жиросжигающая тренировка
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_03.jpg", alt="" srcset="img/items_03@2x.jpg 2x")
+                  .items__title Дневной минимум воды 2.2 л
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_04.jpg", alt="" srcset="img/items_04@2x.jpg 2x")
+                  .items__title Прогулка <br>4500 шагов
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_05.jpg", alt="" srcset="img/items_05@2x.jpg 2x")
+                  .items__title Образовательные материалы и советы
+              .col-xl-4.col-md-6 
+                .items__item 
+                  .items__img 
+                    img(src="img/items_06.jpg", alt="" srcset="img/items_06@2x.jpg 2x")
+                  .items__title Многое другое! трекер веса + трекер калорий 
+      //	/items
+
+      // tariffs
+      .tariffs
+        .container 
+        
+          h2.tariffs__title Выберите свой план
+
+          form(action="#").tariffs__items 
+            .row.justify-content-center
+              .col-lg-4.col-md-6
+                .tariffs__item-v3.tariffs__item-v3--month 
+                  input#tariff_01(type="radio", name="tariffs" checked)
+                  label(for="tariff_01") 
+                    span.tariffs__radio 
+                    span.tariffs__food-name 
+                      span.tariffs__food  
+                        img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
+                      span.tariffs__name Месяц 
+                    span.tariffs__prices
+                      span.tariffs__price 768 &#8381;
+                        span 1920 &#8381;
+                      span.tariffs__orange-price -60%
+                    span.tariffs__text Ежемесячная оплата
+              .col-lg-4.col-md-6
+                .tariffs__item-v3.tariffs__item-v3--week 
+                  input#tariff_02(type="radio", name="tariffs")
+                  label(for="tariff_02") 
+                    span.tariffs__radio 
+                    span.tariffs__food-name 
+                      span.tariffs__food  
+                        img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
+                      span.tariffs__name Неделя
+                    span.tariffs__prices
+                      span.tariffs__price 345 &#8381;
+                        span 448 &#8381; 
+                      span.tariffs__orange-price -23%
+                    span.tariffs__text Еженедельная оплата
+              .col-lg-4.col-md-6
+                .tariffs__item-v3.tariffs__item-v3--day 
+                  input#tariff_03(type="radio", name="tariffs")
+                  label(for="tariff_03") 
+                    span.tariffs__radio 
+                    span.tariffs__food-name 
+                      span.tariffs__food  
+                        img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
+                      span.tariffs__name День
+                    span.tariffs__prices
+                      span.tariffs__price 64 &#8381;
+                    span.tariffs__text Ежедневная оплата
+          .tariffs__approvals 
+            .welcome__approval 
+              input#approval_2(type="checkbox")
+              label(for="approval_2") 
+                span.welcome__approval-checkbox 
+                span.welcome__approval-text Согласен с условиями 
+                  a(href="#") публичной оферты
+            .welcome__approval 
+              input#approval_3(type="checkbox")
+              label(for="approval_3") 
+                span.welcome__approval-checkbox 
+                span.welcome__approval-text Согласен с условиями оферты рекуррентных платежей и подтверждаю согласие на автоматические списания в размере 345 руб. каждую неделю до приостановления действующей подписки в личном кабинете. Подробнее об отмене и возврате средств в оферты рекуррентных платежей
+
+          .tariffs__pays 
+            .tariffs__pays-items 
+              .tariffs__pays-items-row
+                .tariffs__pays-item 
+                  img(src="img/padlock.svg", alt="")
+                  | Гарантия возврата средств
+                .tariffs__pays-item 
+                  img(src="img/wallet.svg", alt="")
+                  | Без скрытых платежей
+            .tariffs__icons 
+              .tariffs__icons-row 
+                .tariffs__icon 
+                  img(src="img/mastercard.svg", alt="")
+                .tariffs__icon 
+                  img(src="img/visa.svg", alt="")
+                .tariffs__icon 
+                  img(src="img/mir.svg", alt="")
+    //	/tariffs
+
+    // warranty
+    .warranty
+      .container 
+        .warranty__container 
+          h2.warranty__title.d-none.d-md-block Наша гарантия возврата денег
+          h2.warranty__title.d-block.d-md-none Наша гарантия <br>возврата денег
+          .warranty__text Мы не сомневаемся, что наша программа будет для вас эффективной, и вы получите видимые результаты через 4 недели! В противном случае мы готовы вернуть Ваши деньги обратно, если вы сможете продемонстрировать, что четко следовали нашему плану. Узнайте больше о действующих ограничениях в нашей политике возврата.
+          .warranty__icon 
+            img(src="img/lock.svg", alt="")
+    //	/warranty
+
+    // comments
+    .comments
+      .container 
+        h2.comments__title Мы создали 
+          span 11,6 млн 
+          | планов питания
+        .comments__items 
+          .row.justify-content-center 
+            .col-lg-4.col-md-6 
+              .comments__item 
+                .comments__head 
+                  .comments__ava 
+                    img(src="img/ava_01.jpg", alt="" srcset="img/ava_01@2x.jpg 2x")
+                  .comments__name Кети Барр
+                    .comments__rating 5
+                      img(src="img/star-2.svg", alt="")
+                .comments__body 
+                  p Прекрасные блюда, похожие на те, что я обычно покупаю, а по рецептам их легко готовить. Я похудела на 6 кг менее чем за неделю. Признаюсь, сначала я была настроена скептически, но это, безусловно, самая эффективная и недорогая схема питания.
+            .col-lg-4.col-md-6 
+              .comments__item 
+                .comments__head 
+                  .comments__ava 
+                    img(src="img/ava_02.jpg", alt="" srcset="img/ava_02@2x.jpg 2x")
+                  .comments__name Маркус Харт
+                    .comments__rating 5
+                      img(src="img/star-2.svg", alt="")
+                .comments__body 
+                  p Приложение помогает с ежедневным планированием еды. Оно удобно в использовании и легко читается. Ничего лишнего, все по делу. Упражнения доступные, и сразу чувствуется результат. Мне нравится.
+            .col-lg-4.col-md-6 
+              .comments__item 
+                .comments__head 
+                  .comments__ava 
+                    img(src="img/ava_03.jpg", alt="" srcset="img/ava_03@2x.jpg 2x")
+                  .comments__name Элоиза
+                    .comments__rating 5
+                      img(src="img/star-2.svg", alt="")
+                .comments__body 
+                  p Мне нравится это приложение, оно поддерживает мою мотивацию и помогает все делать правильно, позволяет следить за моим графиком. Упражнения в приложении просто потрясающие
+                  p Мне еще очень нравится мой план вкусного питания
+    //	/comments
+
+    // case
+    .case
+      .container 
+        .case__container 
+          .case__photos 
+            .case__photo.case__photo--before
+              img(src="img/case_before.jpg", alt="" srcset="img/case_before@2x.jpg 2x")
+            .case__photo.case__photo--after
+              img(src="img/case_after.jpg", alt="" srcset="img/case_after@2x.jpg 2x")
+          .case__content
+            .case__title Марина Д., 38 лет, Курск
+            .case__text Результаты не типичны. Индивидуальные результаты могут отличаться
+    //	/case
+
+    // faq
+    .faq
+      .container 
+        .row 
+          .col-xxl-4.col-xl-5
+            .faq__title Наши клиенты часто спрашивают
+          .col-xl-7.offset-xxl-1
+            .faq__accordion 
+              // accordion bootstrap
+              .accordionid#accordionFaq
+                .accordion-item.faq__item
+                  .accordion-header
+                    button.accordion-button.faq__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse_0" aria-expanded="true" aria-controls="collapse_0") Когда я получу свой план питания?
+                  .accordion-collapse.faq__collapse.collapse#collapse_0(data-bs-parent="#accordionFaq")
+                    .faq__text Вы получите доступ к своему персонализированному плану питания <br>сразу же после оплаты
+                .accordion-item.faq__item
+                  .accordion-header
+                    button.accordion-button.faq__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1") Что делать, если я не получил/не получила письмо
+                  .accordion-collapse.faq__collapse.collapse#collapse_1(data-bs-parent="#accordionFaq")
+                    .faq__text Вы получите доступ к своему персонализированному плану питания <br>сразу же после оплаты
+                .accordion-item.faq__item
+                  .accordion-header
+                    button.accordion-button.faq__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="true" aria-controls="collapse_2") Как я смогу получить доступ к своему плану питания?
+                  .accordion-collapse.faq__collapse.collapse#collapse_2(data-bs-parent="#accordionFaq")
+                    .faq__text Вы получите доступ к своему персонализированному плану питания <br>сразу же после оплаты
+                .accordion-item.faq__item
+                  .accordion-header
+                    button.accordion-button.faq__button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="true" aria-controls="collapse_3") Когда я получу свой план питания?
+                  .accordion-collapse.faq__collapse.collapse#collapse_3(data-bs-parent="#accordionFaq")
+                    .faq__text Вы получите доступ к своему персонализированному плану питания <br>сразу же после оплаты
+              // /accordion bootstrap
+
+    //	/faq
+
+    include core/footer.pug

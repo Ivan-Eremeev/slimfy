@@ -8693,7 +8693,7 @@ svg {
 .tariffs__item-v2--week {
   background-image: url(../img/food_02-v2.png);
   background-color: #fff;
-  color: #000;
+  color: #363636;
 }
 .tariffs__item-v2--week .tariffs__price span {
   color: #7C7A7C;
@@ -8701,13 +8701,12 @@ svg {
 .tariffs__item-v2--day {
   background-image: url(../img/food_03-v2.png);
   background-color: #fff;
-  color: #000;
+  color: #363636;
 }
 .tariffs__item-v2--day .tariffs__price span {
   color: #7C7A7C;
 }
 .tariffs__item-v2 .tariffs__price {
-  width: 100%;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
@@ -8723,8 +8722,73 @@ svg {
   margin-bottom: 15px;
 }
 .tariffs__item-v2:hover {
-  -webkit-box-shadow: 0px 6px 20px rgba(161, 159, 162, 0.8);
-  box-shadow: 0px 6px 20px rgba(161, 159, 162, 0.8);
+  -webkit-box-shadow: 0px 6px 20px rgba(161, 159, 162, 0.9);
+  box-shadow: 0px 6px 20px rgba(161, 159, 162, 0.9);
+}
+.tariffs__item-v3 {
+  height: 100%;
+}
+.tariffs__item-v3 label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px 32px;
+  border-radius: 24px;
+  border: 1px solid #D5D2D6;
+  background-size: 123px;
+  color: #363636;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+.tariffs__item-v3 label:hover {
+  border-color: #9400B5;
+}
+.tariffs__item-v3 input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.tariffs__item-v3 input:checked ~ label {
+  border-color: #9400B5;
+}
+.tariffs__item-v3 input:checked ~ label .tariffs__radio:after {
+  opacity: 1;
+}
+.tariffs__item-v3--week .tariffs__food {
+  width: 40px;
+}
+.tariffs__item-v3--day .tariffs__food {
+  width: 32px;
+}
+.tariffs__item-v3 .tariffs__prices {
+  margin-bottom: 18px;
+}
+.tariffs__item-v3 .tariffs__orange-price {
+  font-family: "Roboto", sans-serif;
+  background: -o-linear-gradient(127.57deg, #9E00C1 8.7%, #8700A5 92.24%);
+  background: linear-gradient(322.43deg, #9E00C1 8.7%, #8700A5 92.24%);
+}
+.tariffs__item-v3 .tariffs__price {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 0;
+}
+.tariffs__item-v3 .tariffs__price span {
+  font-size: 20px;
+  line-height: 30px;
 }
 .tariffs__head {
   display: -webkit-box;
@@ -8898,9 +8962,6 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -8920,6 +8981,44 @@ svg {
 }
 .tariffs__orange-price span {
   font-family: "Roboto", sans-serif;
+}
+.tariffs__food-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.tariffs__food {
+  width: 48px;
+  margin-right: 16px;
+}
+.tariffs__radio {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid #9400B5;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.tariffs__radio:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #9400B5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .tariffs__item--month .tariffs__card {
@@ -8986,6 +9085,9 @@ svg {
     margin-bottom: 6px;
   }
   .tariffs__item-v2 .tariffs__prices {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -8999,6 +9101,43 @@ svg {
   }
   .tariffs__num span {
     display: block;
+  }
+  .tariffs__item-v3--month .tariffs__food {
+    width: 40px;
+  }
+  .tariffs__item-v3--week .tariffs__food {
+    width: 32px;
+  }
+  .tariffs__item-v3--day .tariffs__food {
+    width: 28px;
+  }
+  .tariffs__item-v3 .tariffs__food-name {
+    margin-bottom: 10px;
+  }
+  .tariffs__item-v3 .tariffs__name {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .tariffs__item-v3 .tariffs__prices {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .tariffs__item-v3 .tariffs__price {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .tariffs__item-v3 .tariffs__price span {
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .tariffs__item-v3 .tariffs__orange-price {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 @media (max-width: 767.98px) {
@@ -9048,6 +9187,29 @@ svg {
   .tariffs__item-v2 .tariffs__orange-price {
     font-size: 14px;
     line-height: 18px;
+  }
+  .tariffs__item-v3 label {
+    padding: 10px 24px 20px;
+  }
+  .tariffs__item-v3 .tariffs__food-name {
+    margin-bottom: 6px;
+  }
+  .tariffs__item-v3 .tariffs__name {
+    font-size: 22px;
+  }
+  .tariffs__item-v3 .tariffs__prices {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+  .tariffs__item-v3 .tariffs__price span {
+    display: inline;
+    margin-left: 12px;
+  }
+  .tariffs__item-v3 .tariffs__text {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 @media (max-width: 575.98px) {
