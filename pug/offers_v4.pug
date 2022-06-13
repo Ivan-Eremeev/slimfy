@@ -107,46 +107,37 @@ block content
         
           h2.tariffs__title Выберите свой план
 
-          form(action="#").tariffs__items 
+          form(action="#").tariffs__items.tariffs__items--v4
             .row.justify-content-center
-              .col-lg-4.col-md-6
-                button(type="submit").tariffs__item-v2.tariffs__item-v2--month 
+              .col-lg-4.col-md-6.mt-4.mt-md-0.mb-2.mb-md-0
+                button(type="submit").tariffs__item-v4.tariffs__item-v4--month 
                   .tariffs__name Месяц 
-                  .tariffs__nums 
-                    .tariffs__num 150+ 
-                      span тренировок
-                    .tariffs__num 300+ 
-                      span рецептов
                   .tariffs__prices
                     .tariffs__price 768 &#8381;
                       span 1920 &#8381;
-                    .tariffs__orange-price 
-                      span 25 
-                      | ₽/день
-              .col-lg-4.col-md-6
-                button(type="submit").tariffs__item-v2.tariffs__item-v2--week 
+                  .tariffs__text Ежемесячная оплата
+                  img(src="img/wooman.png", alt="" srcset="img/wooman@2x.png 2x").tariffs__img
+                  .tariffs__sticker 
+                    .tariffs__sticker-inner -60%
+                      span 25 ₽/день
+              .col-lg-4.col-md-6.mt-5.mt-md-0
+                button(type="submit").tariffs__item-v4.tariffs__item-v4--week 
                   .tariffs__name Неделя
-                  .tariffs__nums 
-                    .tariffs__num 10 
-                      span тренировок
-                    .tariffs__num 60 
-                      span рецептов
                   .tariffs__prices
                     .tariffs__price 345 &#8381;
                       span 448 &#8381; 
-                    .tariffs__orange-price 
-                      span 46 
-                      | ₽/день
+                  .tariffs__text Еженедельная оплата
+                  img(src="img/food_01-v4.png", alt="" srcset="img/food_01-v4@2x.png 2x").tariffs__img
+                  .tariffs__sticker
+                    .tariffs__sticker-inner -25%
+                      span 46 ₽/день
               .col-lg-4.col-md-6
-                button(type="submit").tariffs__item-v2.tariffs__item-v2--day 
+                button(type="submit").tariffs__item-v4.tariffs__item-v4--day 
                   .tariffs__name День
-                  .tariffs__nums 
-                    .tariffs__num 2 
-                      span тренировки
-                    .tariffs__num 10 
-                      span рецептов
                   .tariffs__prices
                     .tariffs__price 64 &#8381;
+                  .tariffs__text Ежедневная оплата
+                  img(src="img/food_02-v4.png", alt="" srcset="img/food_02-v4@2x.png 2x").tariffs__img
           .tariffs__approvals 
             .welcome__approval 
               input#approval_2(type="checkbox")

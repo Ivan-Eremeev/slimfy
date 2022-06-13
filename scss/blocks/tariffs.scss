@@ -16,6 +16,9 @@
         padding-top: 16px;
       }
     }
+    &--v4 {
+      padding-top: 60px;
+    }
   }
   &__item {
     width: 100%;
@@ -177,6 +180,99 @@
       margin-bottom: 0;
       span {
         font-size: 20px;
+        line-height: 30px;
+        color: #949494;
+        opacity: 1;
+      }
+    }
+  }
+  &__item-v4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px 32px;
+    padding-top: 66px;
+    border-radius: 35px;
+    box-shadow: 0px 6px 20px rgba(161, 159, 162, 0.56);
+    background-repeat: no-repeat;
+    border: none;
+    background-position: top right;
+    background-size: 123px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    &--month {
+      background: linear-gradient(239.01deg, #B018D2 0%, #8800A7 100%);
+      .tariffs__price {
+        span {
+          color: #FAE1FF;
+        }
+      }
+      .tariffs__text {
+        color: #FAE1FF;
+      }
+      .tariffs__img {
+        width: 186px;
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+      }
+    }
+    &--week {
+      background-color: #fff;
+      color: #363636;
+      .tariffs__price {
+        span {
+          color: #9A9A9A;
+        }
+      }
+      .tariffs__text {
+        color: #9A9A9A;
+      }
+      .tariffs__img {
+        width: 174px;
+        position: absolute;
+        bottom: 22px;
+        right: -20px;
+      }
+    }
+    &--day {
+      background-color: #fff;
+      color: #363636;
+      .tariffs__price {
+        span {
+          color: #9A9A9A;
+        }
+      }
+      .tariffs__text {
+        color: #9A9A9A;
+      }
+      .tariffs__img {
+        width: 185px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &:hover {
+      box-shadow: 0px 6px 20px rgba(161, 159, 162, 0.9);
+    }
+    .tariffs__name {
+      margin-bottom: 14px;
+    }
+    .tariffs__prices {
+      margin-bottom: 5px;
+    }
+    .tariffs__price {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 0;
+      span {
+        font-size: 22px;
         line-height: 30px;
       }
     }
@@ -367,6 +463,49 @@
       opacity: 0;
     }
   }
+  &__sticker {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    position: absolute;
+    top: -75px;
+    left: -25px;
+    &:before {
+      content: '';
+      display: block;
+      background: linear-gradient(216.24deg, #FF9E47 10.81%, #FF7900 85.77%);
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 100%;
+    }
+  }
+  &__sticker-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 117px;
+    border-radius: 100%;
+    background: linear-gradient(216.24deg, #FF9E47 10.81%, #FF7900 85.77%);
+    font-weight: 800;
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    span {
+      font-weight: 500;
+      font-size: 17px;
+    }
+  }
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -402,8 +541,25 @@
       }
     }
   }
+  @include media-breakpoint-down(xxl) {
+    &__item-v4 {
+      &--month {
+        .tariffs__img {
+          width: 170px;
+        }
+      }
+      .tariffs__text {
+        max-width: 150px;
+      }
+    }
+  }
   @include media-breakpoint-down(xl) {
     margin-bottom: 50px;
+    &__items {
+      &--v4 {
+        padding-top: 40px;
+      }
+    }
     &__title {
       margin-bottom: 40px;
     }
@@ -502,9 +658,58 @@
         line-height: 16px;
       }
     }
+    &__item-v4 {
+      padding: 62px 16px 24px;
+      &--month {
+        .tariffs__img {
+          width: 142px;
+          right: -4px;
+        }
+      }
+      &--day {
+        .tariffs__img {
+          width: 150px;
+        }
+      }
+      .tariffs__name {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 5px;
+      }
+      .tariffs__price {
+        font-size: 28px;
+        line-height: 38px;
+        span {
+          display: block;
+          font-size: 18px;
+          line-height: 24px;
+          margin-left: 0;
+        }
+      }
+    }
+    &__sticker {
+      width: 116px;
+      height: 116px;
+      top: -63px;
+      left: -12px;
+    }
+    &__sticker-inner {
+      width: 100px;
+      height: 100px;
+      font-size: 24px;
+      span {
+        font-size: 14px;
+      }
+    }
   }
   @include media-breakpoint-down(md) {
     margin-bottom: 23px;
+    &__items {
+      &--v4 {
+        padding-top: 0;
+        
+      }
+    }
     &__title {
       font-size: 28px;
       line-height: 36px;
@@ -575,6 +780,46 @@
         font-size: 14px;
         line-height: 24px;
       }
+    }
+    &__item-v4 {
+      &--month {
+      }
+      &--week {
+        .tariffs__img {
+          bottom: 0;
+        }
+      }
+      &--day {
+
+      }
+    }
+    .tariffs__name {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .tariffs__price {
+      font-size: 22px;
+      line-height: 32px;
+      span {
+        display: inline;
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .tariffs__text {
+      max-width: 170px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__sticker {
+      width: 112px;
+      height: 112px;
+    }
+    &__sticker-inner {
+      width: 96px;
+      height: 96px;
+      font-size: 20px;
     }
   }
   @include media-breakpoint-down(sm) {
