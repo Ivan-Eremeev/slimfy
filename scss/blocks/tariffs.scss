@@ -790,7 +790,9 @@
         }
       }
       &--day {
-
+        .tariffs__img {
+          width: 135px;
+        }
       }
     }
     .tariffs__name {

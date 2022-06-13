@@ -9426,6 +9426,9 @@ svg {
   .tariffs__item-v4--week .tariffs__img {
     bottom: 0;
   }
+  .tariffs__item-v4--day .tariffs__img {
+    width: 135px;
+  }
   .tariffs .tariffs__name {
     font-size: 24px;
     line-height: 32px;
