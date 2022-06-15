@@ -110,45 +110,36 @@ block content
           form(action="#").tariffs__items 
             .row.justify-content-center
               .col-lg-4.col-md-6
-                .tariffs__item-v3.tariffs__item-v3--month 
-                  input#tariff_01(type="radio", name="tariffs" checked)
-                  label(for="tariff_01") 
-                    span.tariffs__radio 
-                    span.tariffs__food-name 
-                      span.tariffs__food  
-                        img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
-                      span.tariffs__name Месяц 
-                    span.tariffs__prices
-                      span.tariffs__price 768 &#8381;
-                        span 1920 &#8381;
-                      span.tariffs__orange-price -60%
-                    span.tariffs__text Ежемесячная оплата
+                button(type="submit").tariffs__item-v3.tariffs__item-v3--month 
+                  .tariffs__food-name 
+                    .tariffs__food  
+                      img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
+                    .tariffs__name Месяц 
+                  .tariffs__prices
+                    .tariffs__price 768 &#8381;
+                      span 1920 &#8381;
+                    .tariffs__orange-price -60%
+                  .tariffs__text Ежемесячная оплата
               .col-lg-4.col-md-6
-                .tariffs__item-v3.tariffs__item-v3--week 
-                  input#tariff_02(type="radio", name="tariffs")
-                  label(for="tariff_02") 
-                    span.tariffs__radio 
-                    span.tariffs__food-name 
-                      span.tariffs__food  
-                        img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
-                      span.tariffs__name Неделя
-                    span.tariffs__prices
-                      span.tariffs__price 345 &#8381;
-                        span 448 &#8381; 
-                      span.tariffs__orange-price -23%
-                    span.tariffs__text Еженедельная оплата
+                button(type="submit").tariffs__item-v3.tariffs__item-v3--week 
+                  .tariffs__food-name 
+                    .tariffs__food  
+                      img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
+                    .tariffs__name Неделя
+                  .tariffs__prices
+                    .tariffs__price 345 &#8381;
+                      span 448 &#8381; 
+                    .tariffs__orange-price -23%
+                  .tariffs__text Еженедельная оплата
               .col-lg-4.col-md-6
-                .tariffs__item-v3.tariffs__item-v3--day 
-                  input#tariff_03(type="radio", name="tariffs")
-                  label(for="tariff_03") 
-                    span.tariffs__radio 
-                    span.tariffs__food-name 
-                      span.tariffs__food  
-                        img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
-                      span.tariffs__name День
-                    span.tariffs__prices
-                      span.tariffs__price 64 &#8381;
-                    span.tariffs__text Ежедневная оплата
+                button(type="submit").tariffs__item-v3.tariffs__item-v3--day 
+                  .tariffs__food-name 
+                    .tariffs__food  
+                      img(src="img/food-v3.png", alt="" srcset="img/food-v3@2x.png 2x")
+                    .tariffs__name День
+                  .tariffs__prices
+                    .tariffs__price 64 &#8381;
+                  .tariffs__text Ежедневная оплата
           .tariffs__approvals 
             .welcome__approval 
               input#approval_2(type="checkbox")
