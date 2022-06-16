@@ -1,18 +1,27 @@
-mixin header(sticker)
+mixin header(sticker,nomobile)
   // header
-  header.header
-    .container
-      if sticker
-        .header__container.header__container--sticker 
-          a(href="#").header__logo 
-            img(src="img/logo.svg", alt="")
-          a(href="#").header__btn Войти
-            img(src="img/account.svg", alt="")
-      else 
+  if nomobile
+    header.header.d-none.d-md-block
+      .container
         .header__container
           a(href="#").header__logo 
             img(src="img/logo.svg", alt="")
           a(href="#").header__btn Войти
             img(src="img/account.svg", alt="")
+  else
+    header.header
+      .container
+        if sticker
+          .header__container.header__container--sticker 
+            a(href="#").header__logo 
+              img(src="img/logo.svg", alt="")
+            a(href="#").header__btn Войти
+              img(src="img/account.svg", alt="")
+        else 
+          .header__container
+            a(href="#").header__logo 
+              img(src="img/logo.svg", alt="")
+            a(href="#").header__btn Войти
+              img(src="img/account.svg", alt="")
   //	/header
 
