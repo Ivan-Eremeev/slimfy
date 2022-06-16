@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon_x32.png" type="image/png">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>Квиз</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body> 
+		<!-- Добавил .wrapper--noimagecenter-->
+		<div class="wrapper wrapper--noimagecenter">
+						<!-- header-->
+						<header class="header">
+							<div class="container">
+								<div class="header__container"><a class="header__logo" href="#"> <img src="img/logo.svg" alt=""></a><a class="header__btn" href="#">Войти<img src="img/account.svg" alt=""></a></div>
+							</div>
+						</header>
+						<!--	/header-->
+			<!-- Добавил .main--flex-column-->
+			<main class="main main--flex-column">
+				<!-- quiz-->
+				<div class="quiz">
+					<div class="container"> 
+						<form class="quiz__container" action="#"> 
+							<div class="quiz__img"> <img src="img/quiz_01.png" alt="" srcset="img/quiz_01@2x.png 2x"></div>
+							<div class="quiz__content"> 
+								<div class="quiz__progressbar"> <a class="quiz__back" href="#"> 
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="48" height="48" rx="24" fill="white"></rect>
+											<path d="M17 24L33 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M23 17L15.5 24L23 31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></a>
+									<div class="quiz__progressnum"> <span>1</span>/20</div>
+									<div class="quiz__progress"> <span style="width: 5%;"></span></div>
+								</div>
+								<div class="quiz__title">Вы когда-нибудь пользовались персональным планом питания и тренировок?</div>
+								<div class="quiz__flex-grow">
+									<button class="quiz__variant-btn" type="submit"> <img class="d-block d-md-none" src="img/smile-not.png" alt="" srcset="img/smile-not@4x.png 2x">Нет, сталкиваюсь впервые</button>
+									<button class="quiz__variant-btn" type="submit"> <img class="d-block d-md-none" src="img/smile-hand_01.png" alt="" srcset="img/smile-hand_01@4x.png 2x">Я слышала о подобных методах, но не пользовалась сама</button>
+									<button class="quiz__variant-btn" type="submit"> <img class="d-block d-md-none" src="img/smile-stars.png" alt="" srcset="img/smile-stars@4x.png 2x">Да, был опыт</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--	/quiz-->
+			</main>
+		</div>
+		<script src="js/libs/jquery.min.js"> </script>
+		<script src="js/libs/bootstrap.bundle.min.js"> </script>
+		<script src="js/libs/jquery.mailtip.js"> </script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
