@@ -10167,7 +10167,7 @@ ul.mailtip li.hover {
   width: 100px;
   margin-bottom: 5px;
 }
-@media (max-width: 400px) {
+@media (max-width: 370px) {
   .quiz__progressbar {
     margin-bottom: 5px;
   }
