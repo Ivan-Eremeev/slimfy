@@ -9,8 +9,10 @@ html(lang="ru")
 
     meta(name="keywords" content="")
     meta(name="description" content="")
+    meta(name="robots" content="noindex, nofollow")
 
     block title
+    <script>window.addEventListener('resize', () => {let vh = window.innerHeight * 0.01;document.documentElement.style.setProperty('--vh', `${vh}px`);});</script>
 
     //- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
     //- link(rel="stylesheet", href="css/libs/fullpage.css")
@@ -21,8 +23,6 @@ html(lang="ru")
     //- link(rel="stylesheet", href="css/libs/slick.css")
     //- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
     //- link(rel="stylesheet", href="css/libs/aos.css")
-
-    meta(name="robots" content="noindex, nofollow")
 
     link(rel="stylesheet" href="css/style.css")
 
