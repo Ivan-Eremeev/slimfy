@@ -67,6 +67,7 @@ svg {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   background-image: url(../img/bg_up.png), url(../img/bg_center.png), url(../img/bg_bottom.png);
   background-position: 0 0, 0 50%, 0 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
