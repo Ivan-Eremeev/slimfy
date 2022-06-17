@@ -12,7 +12,7 @@ html(lang="ru")
     meta(name="robots" content="noindex, nofollow")
 
     block title
-    <script>window.addEventListener('resize', () => {let vh = window.innerHeight * 0.01;document.documentElement.style.setProperty('--vh', `${vh}px`);});</script>
+    <script>setHeaightVariable();window.addEventListener('resize', setHeaightVariable);function setHeaightVariable() {let vh = window.innerHeight * 0.01;document.documentElement.style.setProperty('--vh', `${vh}px`);}</script>
 
     //- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
     //- link(rel="stylesheet", href="css/libs/fullpage.css")
