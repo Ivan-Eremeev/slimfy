@@ -161,7 +161,10 @@
   }
   &__logo {
     width: 100px;
-    margin-bottom: 5px;
+    margin-left: 14px;
+    img {
+      display: block;
+    }
   }
   @include media-breakpoint-down(sm) {
     &__content {
@@ -178,6 +181,9 @@
       min-height: 75px;
       font-size: 14px;
       line-height: 16px;
+    }
+    &__logo {
+      width: 80px;
     }
   }
   @media (max-width: 400px) {
@@ -206,6 +212,10 @@
         width: 28px;
         margin-right: 14px;
       }
+    }
+    &__logo {
+      width: 60px;
+      margin-left: 5px;
     }
   }
 }

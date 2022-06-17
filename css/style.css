@@ -10166,7 +10166,10 @@ ul.mailtip li.hover {
 }
 .quiz__logo {
   width: 100px;
-  margin-bottom: 5px;
+  margin-left: 14px;
+}
+.quiz__logo img {
+  display: block;
 }
 @media (max-width: 575.98px) {
   .quiz__content {
@@ -10183,6 +10186,9 @@ ul.mailtip li.hover {
     min-height: 75px;
     font-size: 14px;
     line-height: 16px;
+  }
+  .quiz__logo {
+    width: 80px;
   }
 }
 @media (max-width: 400px) {
@@ -10211,6 +10217,10 @@ ul.mailtip li.hover {
   .quiz__variant-btn img {
     width: 28px;
     margin-right: 14px;
+  }
+  .quiz__logo {
+    width: 60px;
+    margin-left: 5px;
   }
 }
 
